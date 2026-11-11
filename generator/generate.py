@@ -69,7 +69,8 @@ class More(BaseModel):
 class Content(BaseModel):
     title: str = Field(description="2-4 word title for the day, drawn from the passage")
     season_line: str = Field(description="One sentence setting the season/calendar atmosphere for this morning")
-    in_a_minute: list[str] = Field(description="Exactly 2 short paragraphs (2-3 sentences each): what the passage says and why it fits today")
+    big_idea: str = Field(description="The one truth the passage is driving at, as it lands on our lives today. One sentence, max ~20 words. Not a summary of the verses.")
+    frame: str = Field(description="One paragraph, 3-5 sentences, framing the day at a higher level: what this truth means for an ordinary day like today, how it connects to the season and the bigger story of Scripture (and to Jesus where it truly does), and the posture to carry into the day. Do not retell or paraphrase the passage.")
     carry_ref: str = Field(description="The single verse (or two) to carry today; must be inside today's passage, e.g. 'Psalm 103:17'")
     glance: list[Glance] = Field(description="2-4 movements covering the whole passage in order")
     understand: list[str] = Field(description="2-4 short paragraphs of plain-language background and meaning; may use {{Book C:V}} references")
@@ -127,7 +128,7 @@ Today's passage is {ref.display()} (Berean Standard Bible):
 {passage}
 
 Tomorrow's passage: {tomorrow.display()}.
-{('Yesterday was ' + prior['ref_display'] + ', titled "' + prior['title'] + '". Do not repeat its steps or tonight question.') if prior else ''}
+{('Yesterday was ' + prior['ref_display'] + ', titled "' + prior['title'] + '"' + ((', with the big idea: ' + prior['big_idea']) if prior.get('big_idea') else '') + '. Build on it where it helps, but do not repeat its big idea, steps, or tonight question.') if prior else ''}
 
 Write today's Manna edition."""
 
@@ -154,10 +155,8 @@ def template_content(ref: bible.Ref, ctx: dict) -> Content:
     return Content(
         title=ref.display(),
         season_line=f"A {ctx['natural_season']} morning in {ctx['church_season']}.",
-        in_a_minute=[
-            f"Today's reading is {ref.display()}. Read it slowly, maybe twice, and notice what it shows you about who God is.",
-            "Then take one thing with you into the day and come back to it tonight together.",
-        ],
+        big_idea="Slow down with one passage, and let it show you who God is.",
+        frame=f"Today's reading is {ref.display()}. Read it slowly, maybe twice, and notice what it shows you about God and about us. Then carry one line of it into the day and come back to it together tonight.",
         carry_ref=carry.canonical(),
         glance=[Glance(verses=f"{first}-{last}", head="Today's passage", line="Read it through once, then again more slowly.")],
         understand=["Ask three questions as you read: What does this show about God? What does it show about us? What is one thing to do about it today?"],
@@ -235,7 +234,8 @@ def assemble(d: date, ctx: dict, ref: bible.Ref, series: str, n: int, tomorrow: 
         "verses": vs,
         "title": c.title.strip(),
         "season_line": uq(c.season_line.strip()),
-        "in_a_minute": [uq(clean_refs(p)) for p in c.in_a_minute][:3],
+        "big_idea": uq(c.big_idea.strip()),
+        "frame": uq(clean_refs(c.frame.strip())),
         "carry": {"ref": carry.canonical(), "display": carry.display(), "text": bible.text_of(carry)},
         "glance": [g.model_dump() for g in c.glance][:4],
         "understand": [uq(clean_refs(p)) for p in c.understand][:4],

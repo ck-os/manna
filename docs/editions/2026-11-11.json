@@ -60,10 +60,8 @@
  ],
  "title": "Love That Outlasts Us",
  "season_line": "It's Veterans Day, a day for remembering people who gave years of their lives for others, two weeks before we gather to give thanks.",
- "in_a_minute": [
-  "Yesterday David listed everything God has done. Today he's honest about how short life is: we're like grass and wildflowers, here for a season, and then the place we stood doesn't even remember us. But God's *loving devotion* doesn't fade the way we do. It runs from everlasting to everlasting, and it reaches our children's children.",
-  "That fits a day like Veterans Day. We set aside days to remember because memory fades and lives pass. The psalm reminds us that the One who never forgets is the Lord, and then it ends right where it began: bless the Lord, O my soul."
- ],
+ "big_idea": "Our lives are short, but God's love isn't, and that changes what's worth living for.",
+ "frame": "Most of what fills a Wednesday will be forgotten by Friday: the emails, the errands, the small worries. On Veterans Day we feel the opposite pull, the wish to honor lives that gave something lasting. Scripture is honest that we are passing, but it doesn't leave us there. What lasts is God's faithful love, and it reaches through us to the people who come after us. So the question for today isn't how to be remembered, but how to pass on what we've been given.",
  "carry": {
   "ref": "Psalm 103:17",
   "display": "Psalm 103:17",
@@ -147,5 +145,5 @@
   "display": "Psalm 100"
  },
  "generated_by": "hand-written",
- "built_at": "2026-11-11T07:06:18-05:00"
+ "built_at": "2026-11-11T07:44:02-05:00"
 }

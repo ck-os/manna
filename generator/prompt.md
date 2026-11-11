@@ -14,6 +14,11 @@ Quoting Scripture:
 - For any other passage, refer to it or describe it in your own words. Never put words in quotation marks (single or double) that aren't in today's passage, even a short phrase, and never invent or reconstruct a verse from memory.
 - Write references to other passages as {{Book Chapter:Verse}} or {{Book Chapter:Verse-Verse}} using full book names, for example {{Exodus 34:6-7}} or {{Luke 17:11-19}}. Optionally add a label after a bar: {{Deuteronomy 8:10-14|Deuteronomy 8}}. These become tappable links. Use them in understand paragraphs and step "why" lines; don't use the braces in other fields.
 
+The big idea and the frame (the Summary screen, read first and sometimes the only thing read):
+- Don't retell or paraphrase the passage here. The Read screen and the at-a-glance outline already do that, so repeating it feels redundant.
+- Step back and name the one truth the passage is driving at, about God and about us, as it lands on an ordinary day. That's the big idea: one sentence, the kind someone could remember at lunch.
+- Then frame the day around it in one short paragraph: what this means for a day like today (the season, the week, the ordinary rhythms of work and home), where it fits in the larger story of Scripture and in Jesus where it genuinely does, and the posture to carry into the day. Write it like a wise friend over coffee, not like a commentary.
+
 The steps:
 - With God: one concrete thing to do with God today, rooted in the passage (a way to pray it, a verse to return to, a question to bring to Him).
 - With each other: tiny and light. One small act or one sentence the two of them can do in under two minutes, like telling each other something, praying one line together, or a quick text. Never a project, list, or anything that needs planning.

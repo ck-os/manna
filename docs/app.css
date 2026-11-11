@@ -92,8 +92,8 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outl
 
 .verse { margin: 0 0 10px; padding-left: 24px; position: relative; }
 .verse sup { position: absolute; left: 0; top: .55em; font-family: var(--ui); font-size: 11px; font-weight: 600; color: var(--gold); line-height: 1; }
-.verse span { display: block; }
-.verse span + span { padding-left: 16px; }
+.verse > span { display: block; }
+.verse > span + span { padding-left: 16px; }
 .hesed { background: linear-gradient(transparent 52%, rgba(var(--sun), .65) 52%); border-radius: 2px; }
 .word { display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; align-items: baseline; padding: 14px 0; margin: 4px 0 14px; border-block: .5px solid var(--hair); }
 .word .heb { font-family: var(--read); font-style: italic; font-size: 30px; color: var(--oak); line-height: 1; }
@@ -245,3 +245,9 @@ body { overscroll-behavior: none; }
 .install-link { display: block; margin: 14px auto 0; font-size: 13px; color: var(--gold); text-decoration: underline; text-decoration-color: rgba(148, 100, 29, .35); text-underline-offset: 3px; }
 .install-link[hidden] { display: none; }
 @media (prefers-reduced-motion: reduce) { .install, .install-scrim { transition: none; } }
+
+/* ---------- Summary: the big idea ---------- */
+.big { padding: 18px 18px 6px; }
+.big .lab { font-size: 13px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--oak); }
+.big .idea { margin: 8px 0 14px; font-family: var(--read); font-weight: 500; font-size: 24px; line-height: 1.3; color: var(--walnut); text-wrap: balance; }
+.big .prose { font-size: 17.5px; }

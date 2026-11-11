@@ -102,19 +102,20 @@
         (chips ? '<div class="chips">' + chips + '</div>' : '') +
         '<div class="prose"><p style="margin:0">' + rich(E.season_line) + '</p></div>' +
       '</div>' +
-      '<div class="sec"><div class="sec-h"><span>Today in a minute</span></div><div class="group pad prose">' +
-        E.in_a_minute.map(function (p) { return '<p>' + rich(p) + '</p>'; }).join('') + '</div></div>' +
+      (E.big_idea
+        ? '<div class="sec"><div class="group big"><div class="lab">The big idea</div><p class="idea">' + rich(E.big_idea) + '</p><div class="prose"><p>' + rich(E.frame) + '</p></div></div></div>'
+        : '<div class="sec"><div class="group pad prose">' + (E.in_a_minute || []).map(function (p) { return '<p>' + rich(p) + '</p>'; }).join('') + '</div></div>') +
       '<div class="sec"><div class="lit-card"><div class="lab">One thing to carry today</div>' +
         '<blockquote>“' + fmtText(E.carry.text) + '”</blockquote><div class="r">' + esc(E.carry.display) + '</div></div></div>' +
-      '<div class="sec"><div class="sec-h"><span>The passage at a glance</span><button type="button" data-go="1">Read it</button></div><div class="group">' +
-        E.glance.map(function (g) { return '<div class="ol"><span class="vv">' + esc(String(g.verses).replace('-', '–')) + '</span><span><b>' + esc(g.head) + '.</b> ' + rich(g.line) + '</span></div>'; }).join('') +
-      '</div></div>' +
       '<div class="sec"><div class="sec-h"><span>Today\'s steps</span><button type="button" data-go="3">Details</button></div><div class="group">' + stepsMini() + '</div></div>' +
       '<div class="sec"><div class="sec-h"><span>Tonight, together</span></div><div class="group together"><p class="q">' + esc(E.tonight) + '</p></div></div>' +
       next(1, 'Start reading');
 
     $('p1').innerHTML =
-      '<div class="sec-h" style="margin-top:6px"><span>' + esc(E.ref_display) + '</span><button type="button" data-ref="' + esc(E.ref) + '">Open in Bible</button></div>' +
+      '<div class="sec-h" style="margin-top:6px"><span>At a glance</span></div><div class="group">' +
+        E.glance.map(function (g) { return '<div class="ol"><span class="vv">' + esc(String(g.verses).replace('-', '–')) + '</span><span><b>' + esc(g.head) + '.</b> ' + rich(g.line) + '</span></div>'; }).join('') +
+      '</div>' +
+      '<div class="sec"><div class="sec-h"><span>' + esc(E.ref_display) + '</span><button type="button" data-ref="' + esc(E.ref) + '">Open in Bible</button></div></div>' +
       '<div class="group pad prose">' + E.verses.map(verseHTML).join('') + '</div>' +
       '<div class="foot-note">Berean Standard Bible (BSB) · public domain</div>' + next(2, 'Understand it');
 
