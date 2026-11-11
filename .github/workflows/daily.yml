@@ -17,6 +17,10 @@ on:
         description: "Rebuild even if that date already exists"
         type: boolean
         default: false
+      dry_run:
+        description: "Test only: build and print the edition, don't publish"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -48,7 +52,14 @@ jobs:
           if [ "${{ inputs.force }}" = "true" ]; then args="$args --force"; fi
           python generator/generate.py $args
 
+      - name: Show the edition (test runs)
+        if: ${{ inputs.dry_run }}
+        run: |
+          f=$(ls -t docs/editions/*.json | head -1)
+          python -c "import json,sys; e=json.load(open(sys.argv[1],encoding='utf-8')); [e.pop(k) for k in ('verses',)]; print(json.dumps(e,ensure_ascii=False,indent=1))" "$f"
+
       - name: Publish
+        if: ${{ !inputs.dry_run }}
         run: |
           git config user.name "manna-bot"
           git config user.email "manna-bot@users.noreply.github.com"
