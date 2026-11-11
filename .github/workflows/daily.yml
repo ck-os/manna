@@ -1,0 +1,66 @@
+name: Daily Manna
+
+# Builds the day's reading early each morning (New York time) and publishes it to GitHub Pages.
+# Three triggers cover both EST and EDT and back each other up if GitHub skips a scheduled run;
+# the generator does nothing if today's edition already exists.
+on:
+  schedule:
+    - cron: "0 9 * * *"    # 4:00 EST / 5:00 EDT
+    - cron: "0 10 * * *"   # 5:00 EST / 6:00 EDT
+    - cron: "30 11 * * *"  # backup
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Build a specific date (YYYY-MM-DD); blank = today"
+        required: false
+      force:
+        description: "Rebuild even if that date already exists"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-manna
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Build today's edition
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          args=""
+          if [ -n "${{ inputs.date }}" ]; then args="$args --date ${{ inputs.date }}"; fi
+          if [ "${{ inputs.force }}" = "true" ]; then args="$args --force"; fi
+          python generator/generate.py $args
+
+      - name: Publish
+        run: |
+          git config user.name "manna-bot"
+          git config user.email "manna-bot@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "Nothing new to publish."
+            exit 0
+          fi
+          git commit -m "Manna: $(TZ=America/New_York date +%F)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --quiet && git push && exit 0
+            echo "Push failed (attempt $i); retrying..."
+            sleep $((i * 10))
+          done
+          exit 1
