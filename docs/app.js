@@ -53,6 +53,7 @@
     $('tab-bible').setAttribute('aria-selected', name === 'bible');
     screens.today.hidden = name !== 'today';
     screens.bible.hidden = name !== 'bible';
+    screens[name].scrollTop = 0;  /* every screen opens at the top */
     syncNav(screens[name]);
   }
   function syncNav(sc) { sc.querySelectorAll('[data-nav]').forEach(function (n) { n.classList.toggle('solid', sc.scrollTop > 44); }); }
@@ -160,8 +161,8 @@
     pills.forEach(function (p, k) { p.setAttribute('aria-selected', k === i); });
     panels.forEach(function (p, k) { p.hidden = k !== i; });
     var pill = pills[i]; if (pill && pill.scrollIntoView) pill.scrollIntoView({ block: 'nearest', inline: 'center' });
-    var target = document.querySelector('.pills').offsetTop - 48;
-    if (screens.today.scrollTop > target) screens.today.scrollTop = target;
+    screens.today.scrollTop = 0;
+    syncNav(screens.today);
   }
   pills.forEach(function (p) { p.addEventListener('click', function () { showPanel(+p.dataset.p); }); });
   var sx = 0, sy = 0;
@@ -291,6 +292,7 @@
     var pat = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     var rx = new RegExp('\\b' + pat, 'i'), rxAll = new RegExp('(\\b' + pat + '\\w*)', 'ig');
     $('browse').hidden = true; $('hint').hidden = true; $('results').hidden = false;
+    screens.bible.scrollTop = 0; syncNav(screens.bible);
     $('results-h').textContent = 'Searching for “' + term + '”';
     $('results-list').innerHTML = '<div class="status">Looking through all 66 books…</div>';
     Promise.all(BOOKS.map(function (_, i) { return loadBook(i).then(function (b) { return [i, b]; }, function () { return [i, null]; }); })).then(function (all) {
