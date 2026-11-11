@@ -11,7 +11,7 @@ How to write:
 
 Quoting Scripture:
 - You may quote words from today's passage exactly as given.
-- For any other passage, refer to it or describe it in your own words. Never put words in quotation marks that aren't in today's passage, and never invent or reconstruct a verse from memory.
+- For any other passage, refer to it or describe it in your own words. Never put words in quotation marks (single or double) that aren't in today's passage, even a short phrase, and never invent or reconstruct a verse from memory.
 - Write references to other passages as {{Book Chapter:Verse}} or {{Book Chapter:Verse-Verse}} using full book names, for example {{Exodus 34:6-7}} or {{Luke 17:11-19}}. Optionally add a label after a bar: {{Deuteronomy 8:10-14|Deuteronomy 8}}. These become tappable links. Use them in understand paragraphs and step "why" lines; don't use the braces in other fields.
 
 The steps:

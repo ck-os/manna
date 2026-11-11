@@ -187,6 +187,21 @@ def clean_refs(text: str) -> str:
     return REF_TOKEN.sub(fix, text)
 
 
+QUOTED = re.compile(r"([\"“'‘])([^\"“”'‘’]{3,}?)([\"”'’])(?=[\s.,;:!?)]|$)")
+
+
+def unquote_outside(text: str, passage: str) -> str:
+    """Drop quotation marks around any phrase that isn't actually in today's passage.
+
+    Only today's BSB text may appear in quotation marks; anything else must read as a paraphrase."""
+    flat = passage.lower().replace("’", "'")
+
+    def fix(m: re.Match) -> str:
+        inner = m.group(2)
+        return m.group(0) if inner.lower().replace("’", "'").strip(" .,;:!?") in flat else inner
+    return QUOTED.sub(fix, text)
+
+
 def assemble(d: date, ctx: dict, ref: bible.Ref, series: str, n: int, tomorrow: bible.Ref, c: Content, source: str) -> dict:
     vs = bible.verses(ref)
     lo, hi = vs[0][0], vs[-1][0]
@@ -202,10 +217,11 @@ def assemble(d: date, ctx: dict, ref: bible.Ref, series: str, n: int, tomorrow: 
         r = bible.parse_ref(m.ref)
         if r:
             more.append({"ref": r.canonical(), "display": r.display(), "line": m.line})
+    uq = lambda t: unquote_outside(t, passage_text)  # noqa: E731
     steps = {}
     for key in ("god", "together", "others"):
         s = getattr(c.steps, key)
-        steps[key] = {"short": s.short.strip(), "full": clean_refs(s.full.strip()), "why": clean_refs(s.why.strip())}
+        steps[key] = {"short": uq(s.short.strip()), "full": uq(clean_refs(s.full.strip())), "why": uq(clean_refs(s.why.strip()))}
     return {
         "date": d.isoformat(),
         "weekday_line": f"{d.strftime('%A')}, {d.strftime('%B')} {d.day}",
@@ -218,15 +234,15 @@ def assemble(d: date, ctx: dict, ref: bible.Ref, series: str, n: int, tomorrow: 
         "ref_display": ref.display(),
         "verses": vs,
         "title": c.title.strip(),
-        "season_line": c.season_line.strip(),
-        "in_a_minute": [clean_refs(p) for p in c.in_a_minute][:3],
+        "season_line": uq(c.season_line.strip()),
+        "in_a_minute": [uq(clean_refs(p)) for p in c.in_a_minute][:3],
         "carry": {"ref": carry.canonical(), "display": carry.display(), "text": bible.text_of(carry)},
         "glance": [g.model_dump() for g in c.glance][:4],
-        "understand": [clean_refs(p) for p in c.understand][:4],
+        "understand": [uq(clean_refs(p)) for p in c.understand][:4],
         "word": c.word.model_dump() if c.word.term else None,
         "glow": glow,
         "steps": steps,
-        "tonight": c.tonight.strip(),
+        "tonight": uq(c.tonight.strip()),
         "more": more[:3],
         "tomorrow": {"ref": tomorrow.canonical(), "display": tomorrow.display()},
         "generated_by": source,
