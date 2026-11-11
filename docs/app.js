@@ -350,6 +350,25 @@
     document.addEventListener('visibilitychange', function () { if (!document.hidden && !reduce && !running) { running = true; requestAnimationFrame(draw); } });
   })();
 
+  /* ---------------------------------------------------------------- first visit: how to add to the Home Screen */
+  (function install() {
+    var ua = navigator.userAgent || '';
+    var isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    var isAndroid = /Android/.test(ua);
+    var standalone = navigator.standalone === true || (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+    var forced = /[?&]install\b/.test(location.search);
+    if (standalone && !forced) return;
+    var card = $('install'), scrim = $('install-scrim'), link = $('install-link');
+    if (isAndroid) { $('install-ios').hidden = true; $('install-android').hidden = false; $('install-note').textContent = 'If you opened this link inside another app, open it in Chrome first.'; }
+    function open() { card.setAttribute('aria-hidden', 'false'); card.classList.add('on'); scrim.classList.add('on'); setTimeout(function () { $('install-ok').focus({ preventScroll: true }); }, 350); }
+    function close() { card.setAttribute('aria-hidden', 'true'); card.classList.remove('on'); scrim.classList.remove('on'); store.set('manna-install-seen', true); }
+    $('install-ok').addEventListener('click', close);
+    scrim.addEventListener('click', close);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && card.classList.contains('on')) close(); });
+    if (isIOS || isAndroid || forced) { link.hidden = false; link.addEventListener('click', open); }
+    if (forced || ((isIOS || isAndroid) && !store.get('manna-install-seen', false))) setTimeout(open, 700);
+  })();
+
   renderToday();
   renderBooks();
   paintContinue();

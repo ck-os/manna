@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap">
-<link rel="stylesheet" href="app.css?v=3">
+<link rel="stylesheet" href="app.css?v=4">
 <title>{{TITLE}}</title>
 </head>
 <body>
@@ -61,7 +61,7 @@
       <div class="light-line">
         <button type="button" data-ref="John 8:12">“I am the <span>light</span> of the world.”<small>John 8:12</small></button>
       </div>
-      <div class="stamp" id="stamp"></div>
+      <button class="install-link" id="install-link" type="button" hidden>How to add Manna to your Home Screen</button>
     </div>
   </section>
 
@@ -120,6 +120,30 @@
     <div class="grid" id="grid"></div>
   </div>
 
+  <div class="install-scrim" id="install-scrim"></div>
+  <div class="install" id="install" role="dialog" aria-modal="true" aria-labelledby="install-t" aria-hidden="true">
+    <div class="grabber"></div>
+    <div class="install-head">
+      <img src="icon-180.png" alt="" width="60" height="60">
+      <div>
+        <h2 id="install-t">Add Manna to your Home Screen</h2>
+        <p>It opens like an app, with a fresh reading waiting every morning.</p>
+      </div>
+    </div>
+    <ol class="install-steps" id="install-ios">
+      <li><span class="n">1</span><span>Tap the <b>Share</b> button <svg class="glyph" viewBox="0 0 24 24" aria-label="Share icon"><path d="M12 3v12"/><polyline points="7.5 7.5 12 3 16.5 7.5"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg> in Safari's toolbar. <small>On newer iPhones, tap <b>•••</b> first, then Share.</small></span></li>
+      <li><span class="n">2</span><span>Scroll down and tap <b>Add to Home Screen</b> <svg class="glyph" viewBox="0 0 24 24" aria-label="Add icon"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M12 8v8M8 12h8"/></svg></span></li>
+      <li><span class="n">3</span><span>Tap <b>Add</b>. From now on, open Manna from your Home Screen each morning.</span></li>
+    </ol>
+    <ol class="install-steps" id="install-android" hidden>
+      <li><span class="n">1</span><span>Tap the <b>⋮</b> menu in the top corner of Chrome.</span></li>
+      <li><span class="n">2</span><span>Tap <b>Add to Home screen</b> (or <b>Install app</b>).</span></li>
+      <li><span class="n">3</span><span>Tap <b>Add</b>. From now on, open Manna from your Home Screen each morning.</span></li>
+    </ol>
+    <p class="install-note" id="install-note">If you opened this link inside another app, open it in Safari first.</p>
+    <button class="next" type="button" id="install-ok">Got it</button>
+  </div>
+
   <nav class="tabbar" role="tablist" aria-label="Manna">
     <button type="button" role="tab" id="tab-today" aria-selected="true">
       <svg viewBox="0 0 26 26"><path d="M5 11h14v5a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6z"/><path d="M19 13h1.5a2.5 2.5 0 0 1 0 5H19"/><path d="M10 7c-1-1.5 1-2.5 0-4M14 7c-1-1.5 1-2.5 0-4"/></svg>Today</button>
@@ -128,6 +152,6 @@
   </nav>
 </div>
 <script type="application/json" id="edition">/*EDITION_JSON*/{}</script>
-<script src="app.js?v=3"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>
