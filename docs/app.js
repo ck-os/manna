@@ -74,13 +74,13 @@
     return '<p class="verse"><sup>' + v[0] + '</sup><span>' + lordify(h) + '</span></p>';
   }
   function stepsMini() {
-    var S = E.steps, rows = [['god', 'With God'], ['together', 'With each other'], ['others', 'Family &amp; friends']];
+    var S = E.steps, rows = [['god', 'With God'], ['together', 'With each other'], ['others', 'Out in the world']];
     return rows.map(function (r) {
       return '<div class="mini"><button class="check" type="button" data-step="' + r[0] + '" aria-pressed="false" aria-label="Mark ' + r[1] + ' done">' + TICK + '</button><span><b>' + r[1] + '</b> ' + esc(S[r[0]].short) + '</span></div>';
     }).join('');
   }
   function stepsFull() {
-    var S = E.steps, rows = [['god', 'With God'], ['together', 'With each other'], ['others', 'Family &amp; friends']];
+    var S = E.steps, rows = [['god', 'With God'], ['together', 'With each other'], ['others', 'Out in the world']];
     return rows.map(function (r) {
       var s = S[r[0]];
       return '<div class="row"><button class="check" type="button" data-step="' + r[0] + '" aria-pressed="false" aria-label="Mark ' + r[1] + ' done">' + TICK + '</button><div><span class="who">' + r[1] + '</span><p>' + rich(s.full) + '</p>' + (s.why ? '<p class="why">' + rich(s.why) + '</p>' : '') + '</div></div>';

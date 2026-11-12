@@ -24,11 +24,11 @@ from pydantic import BaseModel, Field
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bible  # noqa: E402
 import church_calendar  # noqa: E402
+import planner  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 EDITIONS = DOCS / "editions"
-PLAN = json.loads((ROOT / "generator" / "plan.json").read_text(encoding="utf-8"))
 SYSTEM_PROMPT = (ROOT / "generator" / "prompt.md").read_text(encoding="utf-8")
 TEMPLATE = ROOT / "template" / "app.html"
 MODEL = "claude-opus-5-5"
@@ -52,7 +52,7 @@ class Step(BaseModel):
 class Steps(BaseModel):
     god: Step
     together: Step = Field(description="With each other (the couple). Must be tiny: one small act or sentence, under 2 minutes, never a project or list")
-    others: Step = Field(description="Family and friends")
+    others: Step = Field(description="Out in the world: family, friends, coworkers, neighbors, or someone in need")
 
 
 class WordStudy(BaseModel):
@@ -66,11 +66,20 @@ class More(BaseModel):
     line: str = Field(description="Under 10 words: why read it")
 
 
+LIFE_AREAS = [
+    "walking with God", "marriage", "parenting", "home life", "work", "friendship",
+    "neighbors and community", "money and generosity", "rest and pace", "conflict and forgiveness",
+    "worry and trust", "words and speech", "hard seasons and suffering", "church", "sharing faith",
+]
+
+
 class Content(BaseModel):
+    end_verse: int = Field(description="Last verse of today's reading. Pick a natural stopping point inside the verses offered; if the passage is already fixed, return its last verse.")
+    life_area: str = Field(description="The one area of everyday life today's application focuses on, chosen from the list in the instructions")
     title: str = Field(description="2-4 word title for the day, drawn from the passage")
-    season_line: str = Field(description="One sentence setting the season/calendar atmosphere for this morning")
+    season_line: str = Field(description="One sentence setting the scene for this morning: usually where we are in the book's story; mention the season or calendar only if it genuinely fits")
     big_idea: str = Field(description="The one truth the passage is driving at, as it lands on our lives today. One sentence, max ~20 words. Not a summary of the verses.")
-    frame: str = Field(description="One paragraph, 3-5 sentences, framing the day at a higher level: what this truth means for an ordinary day like today, how it connects to the season and the bigger story of Scripture (and to Jesus where it truly does), and the posture to carry into the day. Do not retell or paraphrase the passage.")
+    frame: str = Field(description="One paragraph, 3-5 sentences, framing the day at a higher level: what this truth means for an ordinary day like today, how it lands in the life area you chose, how it connects to the bigger story of Scripture (and to Jesus where it truly does), and the posture to carry into the day. Do not retell or paraphrase the passage.")
     carry_ref: str = Field(description="The single verse (or two) to carry today; must be inside today's passage, e.g. 'Psalm 103:17'")
     glance: list[Glance] = Field(description="2-4 movements covering the whole passage in order")
     understand: list[str] = Field(description="2-4 short paragraphs of plain-language background and meaning; may use {{Book C:V}} references")
@@ -81,54 +90,60 @@ class Content(BaseModel):
     more: list[More] = Field(description="2-3 related passages for 'if you have five more minutes'")
 
 
-# ---------------------------------------------------------------- plan
-
-def plan_for(d: date) -> tuple[bible.Ref, str, int]:
-    """Return (passage, series name, day number within the series) for a date."""
-    dated = PLAN["dated"]
-    by_date = {e["date"]: e for e in dated}
-    if d.isoformat() in by_date:
-        e = by_date[d.isoformat()]
-        series = e["series"]
-        n = sum(1 for x in dated if x["series"] == series and x["date"] <= e["date"])
-        ref = bible.parse_ref(e["ref"])
-        if not ref:
-            raise SystemExit(f"Bad plan reference: {e['ref']}")
-        return ref, series, n
-    last = date.fromisoformat(max(by_date))
-    if d < date.fromisoformat(min(by_date)):
-        raise SystemExit(f"No reading planned for {d}")
-    seq = []
-    for blk in PLAN["after"]:
-        for c in range(blk["from"], blk["to"] + 1):
-            seq.append((blk["book"], c, blk["series"]))
-    i = ((d - last).days - 1) % len(seq)
-    book, c, series = seq[i]
-    n = 1
-    j = i
-    while j > 0 and seq[j - 1][2] == series and seq[j - 1][0] == book:
-        n += 1
-        j -= 1
-    return bible.Ref(bible.NAMES.index(book), c), series, n
-
-
 # ---------------------------------------------------------------- Claude
 
-def write_with_claude(ctx: dict, ref: bible.Ref, series: str, tomorrow: bible.Ref, prior: dict | None) -> Content:
+def _numbered(verses: list) -> str:
+    return "\n".join(f"{v[0]} {v[1]}" for v in verses)
+
+
+def write_with_claude(ctx: dict, day: planner.Day, recent: list[dict]) -> Content:
     import anthropic  # imported here so the template path works without the SDK installed
 
-    passage = "\n".join(f"{v[0]} {v[1]}" for v in bible.verses(ref))
-    upcoming = ", ".join(f"{u['label']} ({u['when']})" for u in ctx["upcoming"]) or "nothing major in the next two months"
+    book_ch = f"{day.start.book} {day.start.c}"
+    if day.kind == "track" and not day.fixed:
+        lo, hi = day.window[0][0], day.window[-1][0]
+        passage_block = (
+            f"Today's reading starts at {book_ch}:{lo}. Choose where it ends: pick end_verse between {lo + planner.MIN_VERSES - 1} and {hi} "
+            f"at a natural break (the end of a scene, story, teaching, or thought), usually 10 to 20 verses, enough for about five minutes. "
+            f"Write about exactly the verses you choose.\n\nVerses available ({book_ch}, Berean Standard Bible):\n{_numbered(day.window)}"
+        )
+    else:
+        vs = bible.verses(day.passage())
+        passage_block = (
+            f"Today's passage is {day.passage().display()} (Berean Standard Bible); set end_verse to {vs[-1][0]}.\n\n{_numbered(vs)}"
+        )
+
+    if day.kind == "track":
+        where = (f"Reading track: {day.track_name} ({'weekdays' if day.track == 'story' else 'weekends'}), "
+                 f"currently in {day.label}, day {day.series_day} of this section.")
+    else:
+        where = f"Today is a special day in the church year: {day.label}. It interrupts the regular reading for one day."
+
+    track_hist = [e for e in recent if day.track and e.get("track") == day.track][-3:]
+    lines = [f"- {e['date']}: {e['ref_display']}, \"{e['title']}\" (life area: {e.get('life_area', 'n/a')}). Big idea: {e.get('big_idea', '')}"
+             for e in recent[-4:]]
+    recent_block = "\n".join(lines) or "- (this is the first day)"
+    story_so_far = ""
+    if track_hist:
+        story_so_far = ("In this track, the last readings were: "
+                        + "; ".join(f"{e['ref_display']} (\"{e['title']}\")" for e in track_hist)
+                        + ". Pick up the thread from there.")
+    recent_areas = [e.get("life_area") for e in recent[-3:] if e.get("life_area")]
+    upcoming = ", ".join(f"{u['label']} ({u['when']})" for u in ctx["upcoming"]) or "nothing notable soon"
+
     user = f"""Today is {ctx['long_date']}.
-Church season: {ctx['church_season']}. Natural season: {ctx['natural_season']} (we live in the eastern United States).
-Coming up: {upcoming}.
-Reading series: {series}.
+{where}
+{story_so_far}
 
-Today's passage is {ref.display()} (Berean Standard Bible):
-{passage}
+Recent days (don't repeat their big ideas, steps, or tonight questions):
+{recent_block}
 
-Tomorrow's passage: {tomorrow.display()}.
-{('Yesterday was ' + prior['ref_display'] + ', titled "' + prior['title'] + '"' + ((', with the big idea: ' + prior['big_idea']) if prior.get('big_idea') else '') + '. Build on it where it helps, but do not repeat its big idea, steps, or tonight question.') if prior else ''}
+Life areas used in the last three days: {', '.join(recent_areas) or 'none yet'}. Choose a different one today unless the passage clearly calls for one of them.
+Life areas to choose from: {', '.join(LIFE_AREAS)}.
+
+Background only, use if it genuinely fits: church season {ctx['church_season']}; natural season {ctx['natural_season']} (eastern United States); coming up: {upcoming}.
+
+{passage_block}
 
 Write today's Manna edition."""
 
@@ -147,14 +162,17 @@ Write today's Manna edition."""
     return response.parsed_output
 
 
-def template_content(ref: bible.Ref, ctx: dict) -> Content:
+def template_content(day: planner.Day, ctx: dict) -> Content:
     """Plain fallback used when the API key is missing or the call fails. Scripture still comes from the BSB."""
+    ref = day.passage(day.window[0][0] + 14 if day.kind == "track" and not day.fixed else None)
     vs = bible.verses(ref)
     first, last = vs[0][0], vs[-1][0]
     carry = bible.Ref(ref.b, ref.c, first, first)
     return Content(
+        end_verse=last,
+        life_area="walking with God",
         title=ref.display(),
-        season_line=f"A {ctx['natural_season']} morning in {ctx['church_season']}.",
+        season_line=f"Today's reading: {ref.display()}.",
         big_idea="Slow down with one passage, and let it show you who God is.",
         frame=f"Today's reading is {ref.display()}. Read it slowly, maybe twice, and notice what it shows you about God and about us. Then carry one line of it into the day and come back to it together tonight.",
         carry_ref=carry.canonical(),
@@ -201,7 +219,8 @@ def unquote_outside(text: str, passage: str) -> str:
     return QUOTED.sub(fix, text)
 
 
-def assemble(d: date, ctx: dict, ref: bible.Ref, series: str, n: int, tomorrow: bible.Ref, c: Content, source: str) -> dict:
+def assemble(d: date, ctx: dict, day: planner.Day, c: Content, source: str) -> dict:
+    ref = day.passage(c.end_verse)
     vs = bible.verses(ref)
     lo, hi = vs[0][0], vs[-1][0]
     carry = bible.parse_ref(c.carry_ref)
@@ -224,8 +243,14 @@ def assemble(d: date, ctx: dict, ref: bible.Ref, series: str, n: int, tomorrow: 
     return {
         "date": d.isoformat(),
         "weekday_line": f"{d.strftime('%A')}, {d.strftime('%B')} {d.day}",
-        "series": series,
-        "series_day": n,
+        "series": day.label,
+        "series_day": day.series_day,
+        "kind": day.kind,
+        "track": day.track,
+        "track_name": day.track_name,
+        "segment": day.segment,
+        "pos": {"b": ref.b, "c": ref.c, "v_end": vs[-1][0]},
+        "life_area": c.life_area.strip().lower(),
         "church_season": ctx["church_season"],
         "natural_season": ctx["natural_season"],
         "chips": ctx["chips"],
@@ -244,7 +269,7 @@ def assemble(d: date, ctx: dict, ref: bible.Ref, series: str, n: int, tomorrow: 
         "steps": steps,
         "tonight": uq(c.tonight.strip()),
         "more": more[:3],
-        "tomorrow": {"ref": tomorrow.canonical(), "display": tomorrow.display()},
+        "tomorrow": None,
         "generated_by": source,
         "built_at": datetime.now(TZ).isoformat(timespec="seconds"),
     }
@@ -281,26 +306,25 @@ def main() -> None:
         return
 
     ctx = church_calendar.context(d)
-    ref, series, n = plan_for(d)
-    tomorrow, _, _ = plan_for(d + timedelta(days=1))
-    prior_path = EDITIONS / f"{(d - timedelta(days=1)).isoformat()}.json"
-    prior = json.loads(prior_path.read_text(encoding="utf-8")) if prior_path.exists() else None
+    day = planner.plan_day(d)
+    recent = planner._editions_before(d)[-6:]
 
     if args.content:
         content = Content.model_validate_json(Path(args.content).read_text(encoding="utf-8"))
         source = "hand-written"
     elif os.environ.get("ANTHROPIC_API_KEY"):
         try:
-            content = write_with_claude(ctx, ref, series, tomorrow, prior)
+            content = write_with_claude(ctx, day, recent)
             source = MODEL
         except Exception as exc:  # keep the morning edition coming even if the API has a bad day
             print(f"Claude call failed, using the plain template: {exc!r}")
-            content, source = template_content(ref, ctx), "template"
+            content, source = template_content(day, ctx), "template"
     else:
         print("ANTHROPIC_API_KEY is not set; using the plain template.")
-        content, source = template_content(ref, ctx), "template"
+        content, source = template_content(day, ctx), "template"
 
-    edition = assemble(d, ctx, ref, series, n, tomorrow, content, source)
+    edition = assemble(d, ctx, day, content, source)
+    edition["tomorrow"] = planner.preview(d + timedelta(days=1), [edition])
     out.write_text(json.dumps(edition, ensure_ascii=False, indent=1), encoding="utf-8")
     render_page(edition)
     print(f"Built {d}: {edition['ref_display']} · {edition['title']} ({source})")
