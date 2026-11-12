@@ -129,5 +129,7 @@ def preview(d: date, extra: list[dict]) -> dict:
     day = plan_day(d, extra)
     if day.kind == "track":
         r = bible.Ref(day.start.b, day.start.c, day.start.v1, day.start.v1)
-        return {"ref": r.canonical(), "display": f"{day.label} continues at {r.display()}"}
+        loc = f"{day.start.book} {day.start.c}" if day.start.v1 == 1 else r.display()
+        verb = "begins with" if day.series_day == 1 else "picks up at"
+        return {"ref": r.canonical(), "display": f"{day.label} {verb} {loc}"}
     return {"ref": day.start.canonical(), "display": f"{day.label}: {day.start.display()}"}

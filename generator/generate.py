@@ -204,7 +204,7 @@ def clean_refs(text: str) -> str:
     return REF_TOKEN.sub(fix, text)
 
 
-QUOTED = re.compile(r"([\"“'‘])([^\"“”'‘’]{3,}?)([\"”'’])(?=[\s.,;:!?)]|$)")
+QUOTED = re.compile(r"(?<![\w])([\"“'‘])([^\"“”'‘’]{3,}?)([\"”'’])(?=[\s.,;:!?)]|$)")
 
 
 def unquote_outside(text: str, passage: str) -> str:
@@ -239,7 +239,7 @@ def assemble(d: date, ctx: dict, day: planner.Day, c: Content, source: str) -> d
     steps = {}
     for key in ("god", "together", "others"):
         s = getattr(c.steps, key)
-        steps[key] = {"short": uq(s.short.strip()), "full": uq(clean_refs(s.full.strip())), "why": uq(clean_refs(s.why.strip()))}
+        steps[key] = {"short": s.short.strip(), "full": clean_refs(s.full.strip()), "why": uq(clean_refs(s.why.strip()))}  # steps may quote things to say; only "why" cites Scripture
     return {
         "date": d.isoformat(),
         "weekday_line": f"{d.strftime('%A')}, {d.strftime('%B')} {d.day}",
@@ -267,7 +267,7 @@ def assemble(d: date, ctx: dict, day: planner.Day, c: Content, source: str) -> d
         "word": c.word.model_dump() if c.word.term else None,
         "glow": glow,
         "steps": steps,
-        "tonight": uq(c.tonight.strip()),
+        "tonight": c.tonight.strip(),
         "more": more[:3],
         "tomorrow": None,
         "generated_by": source,
