@@ -1,10 +1,17 @@
 {
   "_note": "From 'start' on, weekdays walk through 'story' and weekends through 'wisdom', each picking up where its last edition stopped (Claude picks a natural section end each day). 'special' days interrupt with a fixed passage without moving either track. 'legacy' covers the first days before this plan existed.",
-  "start": "2026-11-13",
+  "start": "2026-11-12",
   "legacy": [
-    {"date": "2026-11-10", "ref": "Psalm 103:1-14", "series": "Psalms of Thanksgiving"},
-    {"date": "2026-11-11", "ref": "Psalm 103:15-22", "series": "Psalms of Thanksgiving"},
-    {"date": "2026-11-12", "ref": "Psalm 100", "series": "Psalms of Thanksgiving"}
+    {
+      "date": "2026-11-10",
+      "ref": "Psalm 103:1-14",
+      "series": "Psalms of Thanksgiving"
+    },
+    {
+      "date": "2026-11-11",
+      "ref": "Psalm 103:15-22",
+      "series": "Psalms of Thanksgiving"
+    }
   ],
   "weekday_track": "story",
   "weekend_track": "wisdom",
@@ -12,61 +19,284 @@
     "story": {
       "name": "The Story",
       "segments": [
-        {"book": "Mark", "from": 1, "to": 16, "label": "The Gospel of Mark"},
-        {"book": "Genesis", "from": 1, "to": 11, "label": "Genesis: Beginnings"},
-        {"book": "Genesis", "from": 12, "to": 25, "label": "Genesis: Abraham"},
-        {"book": "James", "from": 1, "to": 5, "label": "James"},
-        {"book": "Genesis", "from": 26, "to": 36, "label": "Genesis: Jacob"},
-        {"book": "Genesis", "from": 37, "to": 50, "label": "Genesis: Joseph"},
-        {"book": "John", "from": 1, "to": 21, "label": "The Gospel of John"},
-        {"book": "Exodus", "from": 1, "to": 20, "label": "Exodus: Out of Egypt"},
-        {"book": "Philippians", "from": 1, "to": 4, "label": "Philippians"},
-        {"book": "Ruth", "from": 1, "to": 4, "label": "Ruth"},
-        {"book": "1 Samuel", "from": 1, "to": 31, "label": "1 Samuel: Samuel, Saul, and David"},
-        {"book": "Ephesians", "from": 1, "to": 6, "label": "Ephesians"},
-        {"book": "Acts", "from": 1, "to": 28, "label": "Acts"},
-        {"book": "Daniel", "from": 1, "to": 6, "label": "Daniel"},
-        {"book": "Jonah", "from": 1, "to": 4, "label": "Jonah"},
-        {"book": "Luke", "from": 1, "to": 24, "label": "The Gospel of Luke"},
-        {"book": "Nehemiah", "from": 1, "to": 8, "label": "Nehemiah"},
-        {"book": "Colossians", "from": 1, "to": 4, "label": "Colossians"},
-        {"book": "2 Samuel", "from": 1, "to": 12, "label": "2 Samuel: King David"},
-        {"book": "Matthew", "from": 5, "to": 7, "label": "The Sermon on the Mount"},
-        {"book": "Joshua", "from": 1, "to": 6, "label": "Joshua"},
-        {"book": "Romans", "from": 1, "to": 16, "label": "Romans"},
-        {"book": "Esther", "from": 1, "to": 10, "label": "Esther"},
-        {"book": "1 Peter", "from": 1, "to": 5, "label": "1 Peter"}
+        {
+          "book": "Mark",
+          "from": 1,
+          "to": 16,
+          "label": "The Gospel of Mark"
+        },
+        {
+          "book": "Genesis",
+          "from": 1,
+          "to": 11,
+          "label": "Genesis: Beginnings"
+        },
+        {
+          "book": "Genesis",
+          "from": 12,
+          "to": 25,
+          "label": "Genesis: Abraham"
+        },
+        {
+          "book": "James",
+          "from": 1,
+          "to": 5,
+          "label": "James"
+        },
+        {
+          "book": "Genesis",
+          "from": 26,
+          "to": 36,
+          "label": "Genesis: Jacob"
+        },
+        {
+          "book": "Genesis",
+          "from": 37,
+          "to": 50,
+          "label": "Genesis: Joseph"
+        },
+        {
+          "book": "John",
+          "from": 1,
+          "to": 21,
+          "label": "The Gospel of John"
+        },
+        {
+          "book": "Exodus",
+          "from": 1,
+          "to": 20,
+          "label": "Exodus: Out of Egypt"
+        },
+        {
+          "book": "Philippians",
+          "from": 1,
+          "to": 4,
+          "label": "Philippians"
+        },
+        {
+          "book": "Ruth",
+          "from": 1,
+          "to": 4,
+          "label": "Ruth"
+        },
+        {
+          "book": "1 Samuel",
+          "from": 1,
+          "to": 31,
+          "label": "1 Samuel: Samuel, Saul, and David"
+        },
+        {
+          "book": "Ephesians",
+          "from": 1,
+          "to": 6,
+          "label": "Ephesians"
+        },
+        {
+          "book": "Acts",
+          "from": 1,
+          "to": 28,
+          "label": "Acts"
+        },
+        {
+          "book": "Daniel",
+          "from": 1,
+          "to": 6,
+          "label": "Daniel"
+        },
+        {
+          "book": "Jonah",
+          "from": 1,
+          "to": 4,
+          "label": "Jonah"
+        },
+        {
+          "book": "Luke",
+          "from": 1,
+          "to": 24,
+          "label": "The Gospel of Luke"
+        },
+        {
+          "book": "Nehemiah",
+          "from": 1,
+          "to": 8,
+          "label": "Nehemiah"
+        },
+        {
+          "book": "Colossians",
+          "from": 1,
+          "to": 4,
+          "label": "Colossians"
+        },
+        {
+          "book": "2 Samuel",
+          "from": 1,
+          "to": 12,
+          "label": "2 Samuel: King David"
+        },
+        {
+          "book": "Matthew",
+          "from": 5,
+          "to": 7,
+          "label": "The Sermon on the Mount"
+        },
+        {
+          "book": "Joshua",
+          "from": 1,
+          "to": 6,
+          "label": "Joshua"
+        },
+        {
+          "book": "Romans",
+          "from": 1,
+          "to": 16,
+          "label": "Romans"
+        },
+        {
+          "book": "Esther",
+          "from": 1,
+          "to": 10,
+          "label": "Esther"
+        },
+        {
+          "book": "1 Peter",
+          "from": 1,
+          "to": 5,
+          "label": "1 Peter"
+        }
       ]
     },
     "wisdom": {
       "name": "Wisdom & Worship",
       "segments": [
-        {"book": "Psalm", "from": 1, "to": 20, "label": "The Psalms"},
-        {"book": "Proverbs", "from": 1, "to": 9, "label": "Proverbs"},
-        {"book": "Psalm", "from": 21, "to": 41, "label": "The Psalms"},
-        {"book": "Proverbs", "from": 10, "to": 15, "label": "Proverbs"},
-        {"book": "Psalm", "from": 42, "to": 72, "label": "The Psalms"},
-        {"book": "Proverbs", "from": 16, "to": 22, "label": "Proverbs"},
-        {"book": "Psalm", "from": 73, "to": 89, "label": "The Psalms"},
-        {"book": "Proverbs", "from": 23, "to": 31, "label": "Proverbs"},
-        {"book": "Psalm", "from": 90, "to": 106, "label": "The Psalms"},
-        {"book": "Ecclesiastes", "from": 1, "to": 12, "label": "Ecclesiastes"},
-        {"book": "Psalm", "from": 107, "to": 150, "label": "The Psalms"}
+        {
+          "book": "Psalm",
+          "from": 1,
+          "to": 20,
+          "label": "The Psalms"
+        },
+        {
+          "book": "Proverbs",
+          "from": 1,
+          "to": 9,
+          "label": "Proverbs"
+        },
+        {
+          "book": "Psalm",
+          "from": 21,
+          "to": 41,
+          "label": "The Psalms"
+        },
+        {
+          "book": "Proverbs",
+          "from": 10,
+          "to": 15,
+          "label": "Proverbs"
+        },
+        {
+          "book": "Psalm",
+          "from": 42,
+          "to": 72,
+          "label": "The Psalms"
+        },
+        {
+          "book": "Proverbs",
+          "from": 16,
+          "to": 22,
+          "label": "Proverbs"
+        },
+        {
+          "book": "Psalm",
+          "from": 73,
+          "to": 89,
+          "label": "The Psalms"
+        },
+        {
+          "book": "Proverbs",
+          "from": 23,
+          "to": 31,
+          "label": "Proverbs"
+        },
+        {
+          "book": "Psalm",
+          "from": 90,
+          "to": 106,
+          "label": "The Psalms"
+        },
+        {
+          "book": "Ecclesiastes",
+          "from": 1,
+          "to": 12,
+          "label": "Ecclesiastes"
+        },
+        {
+          "book": "Psalm",
+          "from": 107,
+          "to": 150,
+          "label": "The Psalms"
+        }
       ]
     }
   },
   "special": [
-    {"event": "Thanksgiving", "ref": "Luke 17:11-19", "label": "Thanksgiving Day"},
-    {"event": "Advent 1", "ref": "Isaiah 9:2-7", "label": "Advent · The Light Is Coming"},
-    {"event": "Advent 2", "ref": "Isaiah 40:1-11", "label": "Advent · Prepare the Way"},
-    {"event": "Advent 3", "ref": "Luke 1:26-38", "label": "Advent · Mary's Yes"},
-    {"event": "Advent 4", "ref": "Micah 5:2-5", "label": "Advent · From Bethlehem"},
-    {"event": "Christmas Eve", "ref": "Luke 2:1-20", "label": "Christmas Eve"},
-    {"event": "Christmas", "ref": "John 1:1-14", "label": "Christmas Day"},
-    {"event": "New Year's Day", "ref": "Lamentations 3:22-26", "label": "New Year's Day"},
-    {"event": "Palm Sunday", "ref": "Luke 19:28-40", "label": "Palm Sunday"},
-    {"event": "Good Friday", "ref": "Luke 23:33-49", "label": "Good Friday"},
-    {"event": "Easter", "ref": "Luke 24:1-12", "label": "Easter Sunday"},
-    {"event": "Pentecost", "ref": "Acts 2:1-13", "label": "Pentecost"}
+    {
+      "event": "Thanksgiving",
+      "ref": "Luke 17:11-19",
+      "label": "Thanksgiving Day"
+    },
+    {
+      "event": "Advent 1",
+      "ref": "Isaiah 9:2-7",
+      "label": "Advent · The Light Is Coming"
+    },
+    {
+      "event": "Advent 2",
+      "ref": "Isaiah 40:1-11",
+      "label": "Advent · Prepare the Way"
+    },
+    {
+      "event": "Advent 3",
+      "ref": "Luke 1:26-38",
+      "label": "Advent · Mary's Yes"
+    },
+    {
+      "event": "Advent 4",
+      "ref": "Micah 5:2-5",
+      "label": "Advent · From Bethlehem"
+    },
+    {
+      "event": "Christmas Eve",
+      "ref": "Luke 2:1-20",
+      "label": "Christmas Eve"
+    },
+    {
+      "event": "Christmas",
+      "ref": "John 1:1-14",
+      "label": "Christmas Day"
+    },
+    {
+      "event": "New Year's Day",
+      "ref": "Lamentations 3:22-26",
+      "label": "New Year's Day"
+    },
+    {
+      "event": "Palm Sunday",
+      "ref": "Luke 19:28-40",
+      "label": "Palm Sunday"
+    },
+    {
+      "event": "Good Friday",
+      "ref": "Luke 23:33-49",
+      "label": "Good Friday"
+    },
+    {
+      "event": "Easter",
+      "ref": "Luke 24:1-12",
+      "label": "Easter Sunday"
+    },
+    {
+      "event": "Pentecost",
+      "ref": "Acts 2:1-13",
+      "label": "Pentecost"
+    }
   ]
 }
