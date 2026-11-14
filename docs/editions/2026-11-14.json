@@ -1,0 +1,147 @@
+{
+ "date": "2026-11-14",
+ "weekday_line": "Saturday, November 14",
+ "series": "The Psalms",
+ "series_day": 1,
+ "kind": "track",
+ "track": "wisdom",
+ "track_name": "Wisdom & Worship",
+ "segment": 0,
+ "pos": {
+  "b": 18,
+  "c": 1,
+  "v_end": 6
+ },
+ "life_area": "friendship",
+ "church_season": "Ordinary Time",
+ "natural_season": "autumn",
+ "chips": [
+  {
+   "label": "Thanksgiving",
+   "when": "in 12 days",
+   "days": 12
+  },
+  {
+   "label": "Advent begins",
+   "when": "in 15 days",
+   "days": 15
+  },
+  {
+   "label": "Christmas Eve",
+   "when": "in 40 days",
+   "days": 40
+  }
+ ],
+ "ref": "Psalm 1:1-6",
+ "ref_display": "Psalm 1:1–6",
+ "verses": [
+  [
+   1,
+   "Blessed is the man who does not walk in the counsel of the wicked, or set foot on the path of sinners, or sit in the seat of mockers."
+  ],
+  [
+   2,
+   "But his delight is in the Law of the LORD, and on His law he meditates day and night."
+  ],
+  [
+   3,
+   "He is like a tree planted by streams of water, yielding its fruit in season, whose leaf does not wither, and who prospers in all he does."
+  ],
+  [
+   4,
+   "Not so the wicked! For they are like chaff driven off by the wind."
+  ],
+  [
+   5,
+   "Therefore the wicked will not stand in the judgment, nor sinners in the assembly of the righteous."
+  ],
+  [
+   6,
+   "For the LORD guards the path of the righteous, but the way of the wicked will perish."
+  ]
+ ],
+ "title": "Planted by Streams",
+ "season_line": "We open the Psalms at the front door: Psalm 1, the gateway that sets two ways of life before everyone who walks into this book of prayer and praise.",
+ "big_idea": "You become like what you delight in and who you walk with, so choose roots and company that lead toward God.",
+ "frame": "Nobody drifts into a withered life all at once. It happens through small choices about whose voice we let shape us, whose jokes we laugh along with, whose advice we take. That makes friendship more than a pleasant extra. It is one of the main ways God either grows us or we slowly dry out. The good news is that the whole Bible holds out a better rootedness, and Jesus is the one person who lived Psalm 1 perfectly. Joined to Him, we draw from a stream that doesn't run dry ({{John 15:4-5|John 15:4–5}}). Today, pay attention to the voices around you, and be the kind of friend whose company points others toward that stream.",
+ "carry": {
+  "ref": "Psalm 1:3",
+  "display": "Psalm 1:3",
+  "text": "He is like a tree planted by streams of water, yielding its fruit in season, whose leaf does not wither, and who prospers in all he does."
+ },
+ "glance": [
+  {
+   "verses": "1-2",
+   "head": "The Blessed Life",
+   "line": "The blessed person refuses the drift toward wicked counsel and instead delights in God's word day and night."
+  },
+  {
+   "verses": "3",
+   "head": "A Well-Watered Tree",
+   "line": "That person is like a tree by streams, fruitful in season and never withering."
+  },
+  {
+   "verses": "4-6",
+   "head": "The Other Way",
+   "line": "The wicked are weightless chaff that blows away, but the LORD watches over the path of the righteous."
+  }
+ ],
+ "understand": [
+  "Psalm 1 is the doorway to the whole book of Psalms. Before a single song of praise or lament, it asks a simple question: which way are you going? It pairs with Psalm 2, which begins as this one ends, with talk of blessing. Together they introduce the two great themes ahead: life under God's word and life under God's King.",
+  "Notice the slide in verse 1: walk, then set foot (stand), then sit. It describes how influence works. First you listen to bad advice, then you linger with people heading the wrong way, then you settle in among those who mock what is good. The blessed person isn't just avoiding things, though. Verse 2 gives the positive: delight. The word Law here is torah, which means instruction, all of God's teaching, not just rules.",
+  "The tree by streams of water echoes {{Jeremiah 17:7-8|Jeremiah 17:7–8}}, where the one who trusts the LORD stays green even in drought. Chaff is the papery husk farmers threw into the wind at threshing time. The grain fell back; the chaff blew away. One life has weight and roots. The other has nothing to hold it.",
+  "Christians have long read Psalm 1 as finally describing Jesus, the only man who perfectly delighted in His Father's word. We don't earn the blessing by our own rootedness. We receive it by being joined to Him, and then His word becomes the stream we drink from each day ({{Joshua 1:8|Joshua 1:8}})."
+ ],
+ "word": {
+  "term": "hagah",
+  "english": "meditates",
+  "gloss": "Hagah means to murmur or mutter under your breath, the same word used for a lion growling over its prey or a dove cooing. Biblical meditation isn't emptying the mind; it's chewing on God's words, even saying them aloud, until they sink in."
+ },
+ "glow": [
+  "his delight is in the Law of the LORD",
+  "like a tree planted by streams of water",
+  "the LORD guards the path of the righteous",
+  "meditates"
+ ],
+ "steps": {
+  "god": {
+   "short": "Murmur Psalm 1:3 aloud several times today, letting it sink in.",
+   "full": "Pick one quiet moment this morning and two more later, maybe in the car or at the sink, and say verse 3 aloud slowly. Ask God to root you there.",
+   "why": "God told Joshua to keep His word on his lips day and night, {{Joshua 1:8|Joshua 1:8}}."
+  },
+  "together": {
+   "short": "Name one friend who's made you more like Jesus, and thank God together.",
+   "full": "Each of you name one friend whose influence has helped you walk closer to God. Say one sentence of thanks to God for them, right there.",
+   "why": "Walking with the wise makes us wise, {{Proverbs 13:20|Proverbs 13:20}}."
+  },
+  "others": {
+   "short": "Text a struggling friend a word of encouragement rooted in Scripture.",
+   "full": "Think of a friend who seems dry or weary right now. Send a short text telling them you're praying for them, with Psalm 1:3 attached.",
+   "why": "Friends sharpen each other toward good, {{Proverbs 27:17|Proverbs 27:17}}."
+  }
+ },
+ "tonight": "Whose voices have been shaping us most lately, and are they helping us grow deeper roots or helping us drift?",
+ "more": [
+  {
+   "ref": "Jeremiah 17:5-8",
+   "display": "Jeremiah 17:5–8",
+   "line": "The same tree image, in a season of drought."
+  },
+  {
+   "ref": "Psalm 2:1-12",
+   "display": "Psalm 2:1–12",
+   "line": "Psalm 1's partner, introducing God's anointed King."
+  },
+  {
+   "ref": "Matthew 7:24-27",
+   "display": "Matthew 7:24–27",
+   "line": "Jesus sets out two ways, two foundations."
+  }
+ ],
+ "tomorrow": {
+  "ref": "Psalm 2:1",
+  "display": "The Psalms picks up at Psalm 2"
+ },
+ "generated_by": "claude-opus-5-5",
+ "built_at": "2026-11-14T10:45:38-05:00"
+}
