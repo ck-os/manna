@@ -1,0 +1,146 @@
+{
+ "date": "2026-11-16",
+ "weekday_line": "Monday, November 16",
+ "series": "The Gospel of Mark",
+ "series_day": 3,
+ "kind": "track",
+ "track": "story",
+ "track_name": "The Story",
+ "segment": 0,
+ "pos": {
+  "b": 40,
+  "c": 1,
+  "v_end": 45
+ },
+ "life_area": "neighbors and community",
+ "church_season": "Ordinary Time",
+ "natural_season": "autumn",
+ "chips": [
+  {
+   "label": "Thanksgiving",
+   "when": "in 10 days",
+   "days": 10
+  },
+  {
+   "label": "Advent begins",
+   "when": "in 13 days",
+   "days": 13
+  },
+  {
+   "label": "Christmas Eve",
+   "when": "in 38 days",
+   "days": 38
+  }
+ ],
+ "ref": "Mark 1:40-45",
+ "ref_display": "Mark 1:40–45",
+ "verses": [
+  [
+   40,
+   "Then a leper came to Jesus, begging on his knees: “If You are willing, You can make me clean.”"
+  ],
+  [
+   41,
+   "Moved with compassion, Jesus reached out His hand and touched the man. “I am willing,” He said. “Be clean!”"
+  ],
+  [
+   42,
+   "And immediately the leprosy left him, and the man was cleansed."
+  ],
+  [
+   43,
+   "Jesus promptly sent him away with a stern warning:"
+  ],
+  [
+   44,
+   "“See that you don’t tell anyone. But go, show yourself to the priest and present the offering Moses prescribed for your cleansing, as a testimony to them.”"
+  ],
+  [
+   45,
+   "But the man went out and openly began to proclaim and spread the news. Consequently, Jesus could no longer enter a town in plain view, but He stayed out in solitary places. Yet people came to Him from every quarter."
+  ]
+ ],
+ "title": "I Am Willing",
+ "season_line": "Jesus has left Capernaum to preach through the towns of Galilee, and on the road a man nobody would touch kneels in front of Him.",
+ "big_idea": "Jesus is not only able but willing, and His touch reaches the very people everyone else keeps at arm's length.",
+ "frame": "Most of us don't doubt that God can help. We quietly wonder whether He wants to, especially with the parts of us we'd rather hide. Jesus answers that question with His hand before He answers it with His words. In ordinary neighborhood life there are always people who live a little outside the camp: the widower who rarely leaves the house, the family no one quite knows, the person whose trouble makes others uneasy. The whole story of Scripture bends toward a God who comes close to the unclean and makes them clean, and in the end Jesus takes the outside place Himself ({{Hebrews 13:12|Hebrews 13:12}}). Carry His posture today: close, unhurried, and willing.",
+ "carry": {
+  "ref": "Mark 1:41",
+  "display": "Mark 1:41",
+  "text": "Moved with compassion, Jesus reached out His hand and touched the man. “I am willing,” He said. “Be clean!”"
+ },
+ "glance": [
+  {
+   "verses": "40-42",
+   "head": "Willing and Able",
+   "line": "A leper begs Jesus to make him clean, and Jesus touches him and heals him at once."
+  },
+  {
+   "verses": "43-44",
+   "head": "Go to the Priest",
+   "line": "Jesus sternly tells him to keep quiet and to go make the offering Moses required."
+  },
+  {
+   "verses": "45",
+   "head": "The News Breaks Loose",
+   "line": "The man spreads the story everywhere, so Jesus can no longer enter towns openly, yet crowds still find Him."
+  }
+ ],
+ "understand": [
+  "Yesterday we watched Jesus heal, cast out demons, and slip away to pray before heading out to preach across Galilee. Now Mark zooms in on one man. Under the law, someone with a serious skin disease had to live alone outside the camp, wear torn clothes, and call out a warning so others kept away ({{Leviticus 13:45-46|Leviticus 13:45–46}}). He was cut off from worship, family, and every human touch.",
+  "Notice his words: he doesn't question Jesus' power, only His willingness. Healing leprosy was seen as something only God could do; when Naaman came for healing, the king of Israel cried out that he was not God ({{2 Kings 5:7|2 Kings 5:7}}). Touching an unclean person normally made you unclean too ({{Leviticus 5:3|Leviticus 5:3}}). With Jesus it runs the other way. His cleanness flows outward, and the man is made whole.",
+  "Jesus then sends him to the priest with the offering described in {{Leviticus 14:1-20|Leviticus 14:1–20}}. That would restore him to community and stand as a witness that God was at work. Why the stern order to stay quiet? Jesus had just said He came to preach ({{Mark 1:38|Mark 1:38}}). He didn't want to be known mainly as a wonder-worker, and He knew the crowds misunderstood what kind of King He was.",
+  "The ending holds a quiet reversal. The man who lived outside can now walk into town, and Jesus ends up staying out in solitary places. It's a small preview of the gospel: Jesus trades places with us, taking the outside so we can come home."
+ ],
+ "word": {
+  "term": "splanchnizomai",
+  "english": "Moved with compassion",
+  "gloss": "It comes from the Greek word for the inner organs, the gut. It describes compassion that rises from deep inside and moves a person to act, not just to feel sorry."
+ },
+ "glow": [
+  "If You are willing, You can make me clean",
+  "Moved with compassion",
+  "I am willing"
+ ],
+ "steps": {
+  "god": {
+   "short": "Pray the leper's prayer over the thing you'd most rather hide.",
+   "full": "Name one place you feel ashamed or stuck and pray it in his words: if You are willing, You can make me clean. Then sit a moment with Jesus' answer in verse 41.",
+   "why": "We can come boldly because Jesus is a High Priest who feels our weakness ({{Hebrews 4:15-16|Hebrews 4:15–16}})."
+  },
+  "together": {
+   "short": "Hold hands and pray one line: Jesus, make us willing where You are.",
+   "full": "Before you part this morning, take each other's hand and pray one sentence together: Jesus, make us willing to reach where You reach today.",
+   "why": ""
+  },
+  "others": {
+   "short": "Draw near to one neighbor who tends to be left on the edges.",
+   "full": "Think of a neighbor who is isolated by age, illness, or awkwardness. Knock, call, or stop to talk today, and offer real presence: a handshake, a hug, or a chair pulled up close.",
+   "why": "Jesus tells us to welcome the ones who can't repay us ({{Luke 14:12-14|Luke 14:12–14}})."
+  }
+ },
+ "tonight": "Who around us lives a little outside the camp, and what honestly keeps us at arm's length from them?",
+ "more": [
+  {
+   "ref": "Leviticus 13:45-46",
+   "display": "Leviticus 13:45–46",
+   "line": "What life was like for this man before Jesus."
+  },
+  {
+   "ref": "2 Kings 5:1-14",
+   "display": "2 Kings 5:1–14",
+   "line": "Another leper healed, and a lesson in humility."
+  },
+  {
+   "ref": "Luke 17:11-19",
+   "display": "Luke 17:11–19",
+   "line": "Ten lepers healed, only one returns to give thanks."
+  }
+ ],
+ "tomorrow": {
+  "ref": "Mark 2:1",
+  "display": "The Gospel of Mark picks up at Mark 2"
+ },
+ "generated_by": "claude-opus-5-5",
+ "built_at": "2026-11-15T08:01:26-05:00"
+}
