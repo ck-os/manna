@@ -318,10 +318,21 @@
   });
 
   /* ---------------------------------------------------------------- freshness: a home-screen app can stay open for days */
+  /* The reading for a day goes up the evening before; it shows from 6:00 AM Eastern. */
+  function showDate() {
+    var p = {};
+    try {
+      new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', hourCycle: 'h23' })
+        .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+    } catch (e) { var n = new Date(); p = { year: n.getFullYear(), month: n.getMonth() + 1, day: n.getDate(), hour: n.getHours() }; }
+    var d = new Date(Date.UTC(+p.year, +p.month - 1, +p.day));
+    if (+p.hour % 24 < 6) d.setUTCDate(d.getUTCDate() - 1);
+    return d.toISOString().slice(0, 10);
+  }
   function checkFresh() {
     if (!window.fetch) return;
     fetch('latest.json?t=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
-      if (j && j.date && E.date && j.date > E.date) location.replace(location.pathname + '?d=' + j.date);
+      if (j && j.date && E.date && E.date < showDate() && j.date > E.date) location.replace(location.pathname + '?d=' + showDate());
     }).catch(function () {});
   }
   document.addEventListener('visibilitychange', function () { if (!document.hidden) checkFresh(); });
@@ -372,8 +383,17 @@
     if (forced || ((isIOS || isAndroid) && !store.get('manna-install-seen', false))) setTimeout(open, 700);
   })();
 
-  renderToday();
   renderBooks();
   paintContinue();
+  (function start() {
+    var want = showDate();
+    if (E.date && E.date > want && window.fetch) {
+      /* the page already carries tomorrow's reading; until 6 AM, show today's */
+      fetch('editions/' + want + '.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (j) { if (j && j.date) E = j; renderToday(); }, function () { renderToday(); });
+    } else {
+      renderToday();
+    }
+  })();
   checkFresh();
 })();

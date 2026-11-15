@@ -299,11 +299,25 @@ def main() -> None:
         print(f"Rendered {newest.name}")
         return
 
-    d = date.fromisoformat(args.date) if args.date else datetime.now(TZ).date()
+    if args.date:
+        targets = [date.fromisoformat(args.date)]
+    else:
+        # Build today if it's missing, and from noon on, tomorrow too. GitHub often starts scheduled
+        # runs hours late, so readings are made the day before; the app switches over at 6:00 AM ET.
+        now = datetime.now(TZ)
+        targets = [now.date()] + ([now.date() + timedelta(days=1)] if now.hour >= 12 else [])
+    built = False
+    for d in targets:
+        built = build(d, args) or built
+    if not built:
+        print("Nothing new to build.")
+
+
+def build(d: date, args) -> bool:
     out = EDITIONS / f"{d.isoformat()}.json"
     if out.exists() and not args.force:
-        print(f"{d} already built; nothing to do.")
-        return
+        print(f"{d} already built.")
+        return False
 
     ctx = church_calendar.context(d)
     day = planner.plan_day(d)
@@ -316,7 +330,7 @@ def main() -> None:
         try:
             content = write_with_claude(ctx, day, recent)
             source = MODEL
-        except Exception as exc:  # keep the morning edition coming even if the API has a bad day
+        except Exception as exc:  # keep the edition coming even if the API has a bad day
             print(f"Claude call failed, using the plain template: {exc!r}")
             content, source = template_content(day, ctx), "template"
     else:
@@ -326,8 +340,10 @@ def main() -> None:
     edition = assemble(d, ctx, day, content, source)
     edition["tomorrow"] = planner.preview(d + timedelta(days=1), [edition])
     out.write_text(json.dumps(edition, ensure_ascii=False, indent=1), encoding="utf-8")
-    render_page(edition)
+    newest = sorted(EDITIONS.glob("*.json"))[-1]
+    render_page(json.loads(newest.read_text(encoding="utf-8")))
     print(f"Built {d}: {edition['ref_display']} · {edition['title']} ({source})")
+    return True
 
 
 if __name__ == "__main__":

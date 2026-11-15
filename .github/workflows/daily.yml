@@ -1,17 +1,20 @@
 name: Daily Manna
 
 # Builds the day's reading early each morning (New York time) and publishes it to GitHub Pages.
-# GitHub delays or skips scheduled runs (worst on the hour), so this tries every 30 minutes
-# at odd minutes from 4:13 to 6:43 AM EST (5:13-7:43 EDT). Only the first run that gets through
-# builds anything; the rest see today's edition already exists and stop.
+# GitHub often starts scheduled runs hours late, so each reading is built the day before: from
+# noon Eastern on, a run builds tomorrow's edition, and the app switches to it at 6:00 AM ET.
+# Several tries spread across the afternoon and evening (plus early-morning backups for "today")
+# make sure one gets through; runs that find nothing to build exit in seconds.
 on:
   schedule:
-    - cron: "13 9 * * *"
-    - cron: "43 9 * * *"
-    - cron: "13 10 * * *"
+    - cron: "17 17 * * *"   # ~12:17 PM EST
+    - cron: "17 19 * * *"
+    - cron: "17 21 * * *"
+    - cron: "17 23 * * *"
+    - cron: "47 1 * * *"    # ~8:47 PM EST
+    - cron: "47 3 * * *"
+    - cron: "13 9 * * *"    # early-morning backup for today
     - cron: "43 10 * * *"
-    - cron: "13 11 * * *"
-    - cron: "43 11 * * *"
   workflow_dispatch:
     inputs:
       date:
