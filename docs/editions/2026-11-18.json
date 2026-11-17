@@ -1,0 +1,166 @@
+{
+ "date": "2026-11-18",
+ "weekday_line": "Wednesday, November 18",
+ "series": "The Gospel of Mark",
+ "series_day": 5,
+ "kind": "track",
+ "track": "story",
+ "track_name": "The Story",
+ "segment": 0,
+ "pos": {
+  "b": 40,
+  "c": 2,
+  "v_end": 28
+ },
+ "life_area": "rest and pace",
+ "church_season": "Ordinary Time",
+ "natural_season": "autumn",
+ "chips": [
+  {
+   "label": "Thanksgiving",
+   "when": "in 8 days",
+   "days": 8
+  },
+  {
+   "label": "Advent begins",
+   "when": "in 11 days",
+   "days": 11
+  },
+  {
+   "label": "Christmas Eve",
+   "when": "in 36 days",
+   "days": 36
+  }
+ ],
+ "ref": "Mark 2:18-28",
+ "ref_display": "Mark 2:18–28",
+ "verses": [
+  [
+   18,
+   "Now John’s disciples and the Pharisees were often fasting. So people came to Jesus and asked, “Why don’t Your disciples fast like John’s disciples and those of the Pharisees?”"
+  ],
+  [
+   19,
+   "Jesus replied, “How can the guests of the bridegroom fast while He is with them? As long as He is with them, they cannot fast."
+  ],
+  [
+   20,
+   "But the time will come when the bridegroom will be taken from them; then they will fast."
+  ],
+  [
+   21,
+   "No one sews a patch of unshrunk cloth on an old garment. If he does, the new piece will pull away from the old, and a worse tear will result."
+  ],
+  [
+   22,
+   "And no one pours new wine into old wineskins. If he does, the wine will burst the skins, and both the wine and the wineskins will be ruined. Instead, new wine is poured into new wineskins.”"
+  ],
+  [
+   23,
+   "One Sabbath Jesus was passing through the grainfields, and His disciples began to pick the heads of grain as they walked along."
+  ],
+  [
+   24,
+   "So the Pharisees said to Him, “Look, why are they doing what is unlawful on the Sabbath?”"
+  ],
+  [
+   25,
+   "Jesus replied, “Have you never read what David did when he and his companions were hungry and in need?"
+  ],
+  [
+   26,
+   "During the high priesthood of Abiathar, he entered the house of God and ate the consecrated bread, which was lawful only for the priests. And he gave some to his companions as well.”"
+  ],
+  [
+   27,
+   "Then Jesus declared, “The Sabbath was made for man, not man for the Sabbath."
+  ],
+  [
+   28,
+   "Therefore, the Son of Man is Lord even of the Sabbath.”"
+  ]
+ ],
+ "title": "Lord of the Sabbath",
+ "season_line": "Jesus has just eaten with tax collectors and sinners, and now the religious leaders question His disciples' habits: why don't they fast, and why do they pick grain on the Sabbath?",
+ "big_idea": "Rest and devotion are gifts from Jesus to enjoy with Him, not burdens we carry to prove ourselves.",
+ "frame": "Most of us treat rest like a reward we finally earn once everything is done, and it never quite is. Scripture tells a different story. God built rest into creation from the start ({{Genesis 2:2-3|Genesis 2:2–3}}), and He gave the Sabbath to freed slaves as a sign they no longer belonged to Pharaoh's endless work ({{Deuteronomy 5:12-15|Deuteronomy 5:12–15}}). Jesus says the Sabbath was made for us, and that He is its Lord, so real rest is found in Him, not in getting the rules exactly right. Today, carry the posture of a wedding guest rather than an anxious worker: slow down on purpose, and let your pace say that Jesus is with you.",
+ "carry": {
+  "ref": "Mark 2:27-28",
+  "display": "Mark 2:27–28",
+  "text": "Then Jesus declared, “The Sabbath was made for man, not man for the Sabbath. Therefore, the Son of Man is Lord even of the Sabbath.”"
+ },
+ "glance": [
+  {
+   "verses": "18-20",
+   "head": "Guests at a Wedding",
+   "line": "Asked why His disciples don't fast, Jesus says you don't fast at a wedding while the bridegroom is present, though a day is coming when He will be taken away."
+  },
+  {
+   "verses": "21-22",
+   "head": "New Wine, New Skins",
+   "line": "What Jesus brings is too new and alive to be stitched onto old religious patterns."
+  },
+  {
+   "verses": "23-28",
+   "head": "Lord of the Sabbath",
+   "line": "When the Pharisees object to grain-picking on the Sabbath, Jesus points to David and declares the Sabbath was made for people, and He is Lord over it."
+  }
+ ],
+ "understand": [
+  "Mark has been stacking up conflict scenes. Yesterday Jesus forgave a paralyzed man and ate with tax collectors, and the religious leaders bristled. Today the questions turn to religious habits. Faithful Jews fasted on set days, and the Pharisees fasted twice a week. The Sabbath, the seventh day of rest, had been surrounded with detailed rules about what counted as work. Picking grain as you walked could be called harvesting.",
+  "Jesus answers the fasting question with a wedding picture. In the Old Testament, God Himself is pictured as the husband of His people ({{Isaiah 62:5|Isaiah 62:5}}, {{Hosea 2:19-20|Hosea 2:19–20}}). By calling Himself the bridegroom, Jesus quietly claims that role. His presence is a feast, not a funeral. But verse 20 is the first shadow of the cross in Mark: the bridegroom will be taken away. The new wine and patch sayings make the point plain. Jesus is not a small upgrade to old religion. He is something new that needs a new heart to hold it.",
+  "For the Sabbath, Jesus reaches back to the story in {{1 Samuel 21:1-6|1 Samuel 21:1–6}}, when a hungry David and his men ate the holy bread meant for priests. God's law was never meant to leave people starving for the sake of the rule. Then comes the bold line: the Son of Man, the heavenly King from {{Daniel 7:13-14|Daniel 7:13–14}}, is Lord of the Sabbath. The one who gave the day of rest now stands in the grainfield. Later, Hebrews would say that God's people find their true rest by trusting Christ ({{Hebrews 4:9-10|Hebrews 4:9–10}})."
+ ],
+ "word": {
+  "term": "sabbaton",
+  "english": "Sabbath",
+  "gloss": "The Greek word borrows the Hebrew shabbat, from a verb meaning to stop or cease. At its root, the Sabbath is not about doing something extra for God but about stopping, and trusting Him enough to set the work down."
+ },
+ "glow": [
+  "while He is with them",
+  "new wine is poured into new wineskins",
+  "The Sabbath was made for man, not man for the Sabbath",
+  "Sabbath"
+ ],
+ "steps": {
+  "god": {
+   "short": "Take a five-minute pause today and simply sit with Jesus, no agenda.",
+   "full": "Sometime this afternoon, stop for five minutes. Set down your phone and your list, pray verse 27 back to God, and thank Jesus that rest is His gift, not your reward.",
+   "why": "Jesus invites the weary to come and find rest in Him, {{Matthew 11:28-30|Matthew 11:28–30}}."
+  },
+  "together": {
+   "short": "Tell each other one thing that would feel truly restful this week.",
+   "full": "Before you part this morning, each name one small thing that would actually feel like rest this week: a slow walk, an early night, a meal without screens. Just say it out loud.",
+   "why": ""
+  },
+  "others": {
+   "short": "Lighten one load for a weary coworker, friend, or parent today.",
+   "full": "Notice someone who is running on empty, a coworker, a young parent, a friend, and quietly take one small thing off their plate or tell them it's okay to stop for a bit.",
+   "why": "The Sabbath was given so that even servants and strangers could rest, {{Exodus 20:8-11|Exodus 20:8–11}}."
+  }
+ },
+ "tonight": "Does our pace right now look more like guests at a wedding or workers trying to earn a break, and what is one thing we could stop doing this week?",
+ "more": [
+  {
+   "ref": "1 Samuel 21:1-6",
+   "display": "1 Samuel 21:1–6",
+   "line": "The David story Jesus points to."
+  },
+  {
+   "ref": "Deuteronomy 5:12-15",
+   "display": "Deuteronomy 5:12–15",
+   "line": "Sabbath as a gift for freed slaves."
+  },
+  {
+   "ref": "Matthew 11:28-30",
+   "display": "Matthew 11:28–30",
+   "line": "Jesus offers rest to the weary."
+  }
+ ],
+ "tomorrow": {
+  "ref": "Mark 3:1",
+  "display": "The Gospel of Mark picks up at Mark 3"
+ },
+ "generated_by": "claude-opus-5-5",
+ "built_at": "2026-11-17T13:29:56-05:00"
+}
