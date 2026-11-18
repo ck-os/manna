@@ -1,0 +1,199 @@
+{
+ "date": "2026-11-19",
+ "weekday_line": "Thursday, November 19",
+ "series": "The Gospel of Mark",
+ "series_day": 6,
+ "kind": "track",
+ "track": "story",
+ "track_name": "The Story",
+ "segment": 0,
+ "pos": {
+  "b": 40,
+  "c": 3,
+  "v_end": 19
+ },
+ "life_area": "church",
+ "church_season": "Ordinary Time",
+ "natural_season": "autumn",
+ "chips": [
+  {
+   "label": "Thanksgiving",
+   "when": "in 7 days",
+   "days": 7
+  },
+  {
+   "label": "Advent begins",
+   "when": "in 10 days",
+   "days": 10
+  },
+  {
+   "label": "Christmas Eve",
+   "when": "in 35 days",
+   "days": 35
+  }
+ ],
+ "ref": "Mark 3:1-19",
+ "ref_display": "Mark 3:1–19",
+ "verses": [
+  [
+   1,
+   "Once again Jesus entered the synagogue, and a man with a withered hand was there."
+  ],
+  [
+   2,
+   "In order to accuse Jesus, they were watching to see if He would heal on the Sabbath."
+  ],
+  [
+   3,
+   "Then Jesus said to the man with the withered hand, “Stand up among us.”"
+  ],
+  [
+   4,
+   "And He asked them, “Which is lawful on the Sabbath: to do good or to do evil, to save life or to destroy it?” But they were silent."
+  ],
+  [
+   5,
+   "Jesus looked around at them with anger and sorrow at their hardness of heart. Then He said to the man, “Stretch out your hand.” So he stretched it out, and it was restored."
+  ],
+  [
+   6,
+   "At this, the Pharisees went out and began plotting with the Herodians how they might kill Jesus."
+  ],
+  [
+   7,
+   "So Jesus withdrew with His disciples to the sea, accompanied by a large crowd from Galilee, Judea,"
+  ],
+  [
+   8,
+   "Jerusalem, Idumea, the region beyond the Jordan, and the vicinity of Tyre and Sidon. The large crowd came to Him when they heard what great things He was doing."
+  ],
+  [
+   9,
+   "Jesus asked His disciples to have a boat ready for Him so that the crowd would not crush Him."
+  ],
+  [
+   10,
+   "For He had healed so many that all who had diseases were pressing forward to touch Him."
+  ],
+  [
+   11,
+   "And when the unclean spirits saw Him, they fell down before Him and cried out, “You are the Son of God!”"
+  ],
+  [
+   12,
+   "But He warned them sternly not to make Him known."
+  ],
+  [
+   13,
+   "Then Jesus went up on the mountain and called for those He wanted, and they came to Him."
+  ],
+  [
+   14,
+   "He appointed twelve of them, whom He designated as apostles, to accompany Him, to be sent out to preach,"
+  ],
+  [
+   15,
+   "and to have authority to drive out demons."
+  ],
+  [
+   16,
+   "These are the twelve He appointed: Simon (whom He named Peter),"
+  ],
+  [
+   17,
+   "James son of Zebedee and his brother John (whom He named Boanerges, meaning “Sons of Thunder”),"
+  ],
+  [
+   18,
+   "Andrew, Philip, Bartholomew, Matthew, Thomas, James son of Alphaeus, Thaddaeus, Simon the Zealot,"
+  ],
+  [
+   19,
+   "and Judas Iscariot, who betrayed Jesus."
+  ]
+ ],
+ "title": "Those He Wanted",
+ "season_line": "Yesterday Jesus called Himself Lord of the Sabbath. Today that claim is tested in a synagogue, the opposition turns deadly, and Jesus responds by gathering His people.",
+ "big_idea": "Jesus calls ordinary, mismatched people first to be with Him, then sends them out together to do His good.",
+ "frame": "Church can feel like a place we attend, or a crowd we stand in. But Jesus pictured something closer: a circle of people He chose on purpose, called first to be near Him and only then sent out. That circle was never tidy. It held a tax collector and a revolutionary, hotheads and doubters, and one who would betray Him. The same is true of your church this week, with its people you'd pick and people you wouldn't. Jesus was rebuilding God's family, the way twelve tribes once became Israel ({{Exodus 24:4|Exodus 24:4}}), and He is still doing it today ({{Ephesians 2:19-22|Ephesians 2:19–22}}). So carry this posture into the day: you belong because He wanted you, and so do the people sitting next to you.",
+ "carry": {
+  "ref": "Mark 3:14",
+  "display": "Mark 3:14",
+  "text": "He appointed twelve of them, whom He designated as apostles, to accompany Him, to be sent out to preach,"
+ },
+ "glance": [
+  {
+   "verses": "1-6",
+   "head": "A Hand Restored",
+   "line": "On the Sabbath Jesus heals a man's withered hand while critics watch, and they leave plotting to kill Him."
+  },
+  {
+   "verses": "7-12",
+   "head": "Crowds Press In",
+   "line": "People pour in from every region to touch Him, and the demons cry out who He is."
+  },
+  {
+   "verses": "13-19",
+   "head": "Twelve Are Called",
+   "line": "On a mountain Jesus chooses twelve to be with Him and to be sent out with His authority."
+  }
+ ],
+ "understand": [
+  "This scene finishes the Sabbath argument from yesterday ({{Mark 2:23-28|Mark 2:23–28}}). The critics aren't hoping for a healing. They're hoping for a charge. Jesus puts the man in the middle of the room and asks a question that cuts through everything: is the Sabbath for doing good or doing harm? Their silence says enough. Mark tells us Jesus felt both anger and sorrow. He grieved hearts that cared more about winning than about a hurting man. Then the Pharisees team up with the Herodians, supporters of King Herod's family. These were groups that normally had little use for each other. Only three chapters in, the road to the cross has begun.",
+  "Meanwhile the crowds grow huge. They come from Idumea in the far south and from the Gentile towns of Tyre and Sidon in the north. Even the unclean spirits recognize Him as the Son of God, but Jesus silences them. He will make Himself known on His own terms. In Mark, the clearest confession comes at the cross, from a Roman soldier ({{Mark 15:39|Mark 15:39}}).",
+  "Then Jesus goes up a mountain and chooses twelve. That number is no accident. Israel had twelve tribes, and at Mount Sinai God first formed them into His people ({{Exodus 24:1-4|Exodus 24:1–4}}). Jesus is gathering a renewed people of God around Himself. Notice the order of His call: first to accompany Him, then to preach and drive out demons. Being with Him comes before working for Him. He sends them out later in {{Mark 6:7-13|Mark 6:7–13}}.",
+  "Look at the list. Simon gets a new name, Peter. James and John are nicknamed Sons of Thunder, likely for their fiery tempers ({{Luke 9:54|Luke 9:54}}). Matthew had collected taxes for Rome, and Simon the Zealot belonged to a group that wanted Rome thrown out. Judas is named honestly as the betrayer. Jesus knew exactly whom He was calling, and He called them anyway."
+ ],
+ "word": {
+  "term": "apostolos",
+  "english": "apostles",
+  "gloss": "From the Greek verb for sending, an apostolos is a 'sent one,' a messenger who carries the authority of the one who sent him. The same root shows up in verse 14's 'sent out,' so Jesus' chosen ones are defined by being with Him and being sent by Him."
+ },
+ "glow": [
+  "Stretch out your hand.",
+  "called for those He wanted",
+  "to accompany Him",
+  "apostles"
+ ],
+ "steps": {
+  "god": {
+   "short": "Before doing anything for God today, spend five quiet minutes simply with Him.",
+   "full": "Read verses 13-14 slowly and thank Jesus that He called you because He wanted you. Then sit with Him for a few minutes without asking for anything.",
+   "why": "Fruit grows from staying close to Him, not from striving: {{John 15:5|John 15:5}}."
+  },
+  "together": {
+   "short": "Each name one church member unlike you and thank God for them aloud.",
+   "full": "Over coffee, each of you name one person at church you'd never have picked as a friend. Say one sentence of thanks to God for them.",
+   "why": "A tax collector and a Zealot shared one circle: {{Mark 3:18|Mark 3:18}}."
+  },
+  "others": {
+   "short": "Reach out to someone on the edges at church: new, older, or overlooked.",
+   "full": "Send a short message today to someone at church who often sits alone or is new. Ask how they're doing, or invite them to sit with you Sunday.",
+   "why": "Welcome one another as Christ welcomed you: {{Romans 15:7|Romans 15:7}}."
+  }
+ },
+ "tonight": "Who in our church family is most unlike us, and what might Jesus want to teach us through sharing the same circle with them?",
+ "more": [
+  {
+   "ref": "Luke 6:12-16",
+   "display": "Luke 6:12–16",
+   "line": "Jesus prayed all night before choosing the twelve."
+  },
+  {
+   "ref": "Mark 6:7-13",
+   "display": "Mark 6:7–13",
+   "line": "The twelve are finally sent out in pairs."
+  },
+  {
+   "ref": "Ephesians 2:19-22",
+   "display": "Ephesians 2:19–22",
+   "line": "Strangers built together into one household of God."
+  }
+ ],
+ "tomorrow": {
+  "ref": "Mark 3:20",
+  "display": "The Gospel of Mark picks up at Mark 3:20"
+ },
+ "generated_by": "claude-opus-5-5",
+ "built_at": "2026-11-18T12:58:57-05:00"
+}
