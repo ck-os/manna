@@ -1,0 +1,159 @@
+{
+ "date": "2026-11-21",
+ "weekday_line": "Saturday, November 21",
+ "series": "The Psalms",
+ "series_day": 3,
+ "kind": "track",
+ "track": "wisdom",
+ "track_name": "Wisdom & Worship",
+ "segment": 0,
+ "pos": {
+  "b": 18,
+  "c": 3,
+  "v_end": 8
+ },
+ "life_area": "worry and trust",
+ "church_season": "Ordinary Time",
+ "natural_season": "autumn",
+ "chips": [
+  {
+   "label": "Thanksgiving",
+   "when": "in 5 days",
+   "days": 5
+  },
+  {
+   "label": "Advent begins",
+   "when": "in 8 days",
+   "days": 8
+  },
+  {
+   "label": "Christmas Eve",
+   "when": "in 33 days",
+   "days": 33
+  }
+ ],
+ "ref": "Psalm 3:1-8",
+ "ref_display": "Psalm 3:1–8",
+ "verses": [
+  [
+   1,
+   "A Psalm of David, when he fled from his son Absalom. O LORD, how my foes have increased! How many rise up against me!"
+  ],
+  [
+   2,
+   "Many say of me, “God will not deliver him.” Selah"
+  ],
+  [
+   3,
+   "But You, O LORD, are a shield around me, my glory, and the One who lifts my head."
+  ],
+  [
+   4,
+   "To the LORD I cry aloud, and He answers me from His holy mountain. Selah"
+  ],
+  [
+   5,
+   "I lie down and sleep; I wake again, for the LORD sustains me."
+  ],
+  [
+   6,
+   "I will not fear the myriads set against me on every side."
+  ],
+  [
+   7,
+   "Arise, O LORD! Save me, O my God! Strike all my enemies on the jaw; break the teeth of the wicked."
+  ],
+  [
+   8,
+   "Salvation belongs to the LORD; may Your blessing be on Your people. Selah"
+  ]
+ ],
+ "title": "Lie Down and Sleep",
+ "season_line": "Psalm 2 crowned God's anointed King on Zion; now Psalm 3 shows that same king, David, running for his life from his own son.",
+ "big_idea": "When worries crowd in, God is near and holding you, so you can stop keeping watch and sleep.",
+ "frame": "Most of our worry is a night watch we were never asked to keep: we lie awake guarding outcomes we can't control. This psalm doesn't pretend the trouble is small. David counts his enemies honestly, then turns with one word, 'But,' to the God who surrounds him. That same turn is open to you today, whether the pressure is a bill, a diagnosis, a child, or a voice in your head saying God won't come through. Jesus heard that taunt too ({{Matthew 27:43|Matthew 27:43}}), entrusted Himself to the Father, and was raised. Carry today the posture of a person who can name every fear out loud and still lie down at night, because Someone else is awake.",
+ "carry": {
+  "ref": "Psalm 3:5",
+  "display": "Psalm 3:5",
+  "text": "I lie down and sleep; I wake again, for the LORD sustains me."
+ },
+ "glance": [
+  {
+   "verses": "1-2",
+   "head": "Surrounded and Mocked",
+   "line": "David's enemies multiply, and many say God has given up on him."
+  },
+  {
+   "verses": "3-4",
+   "head": "But You, O LORD",
+   "line": "David turns to God as his shield and cries out, and God answers."
+  },
+  {
+   "verses": "5-6",
+   "head": "Sleep in the Storm",
+   "line": "Held by God, David sleeps, wakes, and refuses to fear the crowds against him."
+  },
+  {
+   "verses": "7-8",
+   "head": "Rescue Belongs to God",
+   "line": "David asks God to act, hands judgment to Him, and prays blessing on the people."
+  }
+ ],
+ "understand": [
+  "Psalm 3 is the first psalm with a title tying it to a real moment. David's son Absalom has stolen the hearts of Israel and seized the throne, and David flees Jerusalem barefoot, weeping, with his head covered as he climbs the Mount of Olives ({{2 Samuel 15:13-30|2 Samuel 15:13–30}}). Along the road a man named Shimei throws stones and curses him, saying the LORD is repaying him ({{2 Samuel 16:5-14|2 Samuel 16:5–14}}). That is the voice behind verse 2: God will not deliver him.",
+  "Notice the turn in verse 3. David left Jerusalem with his head covered in shame, yet he calls God the One who lifts my head. God is a shield around him, not just in front, and God answers from His holy mountain, the same Zion where Psalm 2 set the King. Psalm 2 ended by blessing all who take refuge in Him ({{Psalm 2:12|Psalm 2:12}}); Psalm 3 shows what that refuge looks like on the worst night of a man's life.",
+  "Verse 5 is the quiet center. A king hunted by an army lies down and sleeps. That isn't denial; it's trust. He wakes because the LORD sustains him, not because he stood guard. Jesus did something similar, asleep in a boat while the storm raged ({{Mark 4:35-41|Mark 4:35–41}}).",
+  "Verse 7 sounds harsh, but David is handing justice to God rather than taking it himself. When the battle was won, he wept bitterly for Absalom ({{2 Samuel 18:33|2 Samuel 18:33}}). And the psalm ends not with victory but with blessing on Your people, the very people who had turned against him."
+ ],
+ "word": {
+  "term": "yeshuah",
+  "english": "deliver; Salvation",
+  "gloss": "This Hebrew word means rescue, deliverance, being brought out into safety. The enemies say God gives David no yeshuah (v. 2), and David answers that yeshuah belongs to the LORD (v. 8); it is the same root as the name Jesus, meaning 'the LORD saves.'"
+ },
+ "glow": [
+  "the One who lifts my head",
+  "I lie down and sleep; I wake again",
+  "Salvation belongs to the LORD"
+ ],
+ "steps": {
+  "god": {
+   "short": "Name your loudest worry, then pray verse 3 over it phrase by phrase.",
+   "full": "Write down the one worry that is crowding you most this weekend. Then pray verse 3 over it slowly: shield around me, my glory, the One who lifts my head, telling God what each phrase means for that worry.",
+   "why": "David names his enemies honestly before he turns to God, as in {{Psalm 62:8|Psalm 62:8}}."
+  },
+  "together": {
+   "short": "At bedtime, one of you prays verse 5 aloud over the other.",
+   "full": "Tonight as you turn out the light, one of you says verse 5 out loud as a prayer over the other: I lie down and sleep; I wake again, for the LORD sustains me. That's it; then go to sleep.",
+   "why": "God gives sleep to those He loves, {{Psalm 127:2|Psalm 127:2}}."
+  },
+  "others": {
+   "short": "Text a friend who's under pressure: praying God lifts your head today.",
+   "full": "Think of a friend or family member in a hard stretch who is probably not sleeping well. Send a short text telling them you're praying the Lord will be a shield around them and lift their head today.",
+   "why": "We carry each other's burdens, {{Galatians 6:2|Galatians 6:2}}."
+  }
+ },
+ "tonight": "What worry have you been keeping watch over at night, and what would it look like to hand it to God and actually sleep on it?",
+ "more": [
+  {
+   "ref": "2 Samuel 15:13-30",
+   "display": "2 Samuel 15:13–30",
+   "line": "The night David fled and wept up the mountain"
+  },
+  {
+   "ref": "Psalm 4:1-8",
+   "display": "Psalm 4:1–8",
+   "line": "David's evening psalm ends in peaceful sleep too"
+  },
+  {
+   "ref": "Philippians 4:6-7",
+   "display": "Philippians 4:6–7",
+   "line": "God's peace guarding anxious hearts and minds"
+  }
+ ],
+ "tomorrow": {
+  "ref": "Psalm 4:1",
+  "display": "The Psalms picks up at Psalm 4"
+ },
+ "generated_by": "claude-opus-5-5",
+ "built_at": "2026-11-20T12:45:32-05:00"
+}
