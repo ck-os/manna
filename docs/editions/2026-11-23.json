@@ -1,0 +1,208 @@
+{
+ "date": "2026-11-23",
+ "weekday_line": "Monday, November 23",
+ "series": "The Gospel of Mark",
+ "series_day": 8,
+ "kind": "track",
+ "track": "story",
+ "track_name": "The Story",
+ "segment": 0,
+ "pos": {
+  "b": 40,
+  "c": 4,
+  "v_end": 20
+ },
+ "life_area": "walking with god",
+ "church_season": "Ordinary Time",
+ "natural_season": "autumn",
+ "chips": [
+  {
+   "label": "Thanksgiving",
+   "when": "in 3 days",
+   "days": 3
+  },
+  {
+   "label": "Advent begins",
+   "when": "in 6 days",
+   "days": 6
+  },
+  {
+   "label": "Christmas Eve",
+   "when": "in 31 days",
+   "days": 31
+  }
+ ],
+ "ref": "Mark 4:1-20",
+ "ref_display": "Mark 4:1–20",
+ "verses": [
+  [
+   1,
+   "Once again Jesus began to teach beside the sea, and such a large crowd gathered around Him that He got into a boat and sat in it, while all the people crowded along the shore."
+  ],
+  [
+   2,
+   "And He taught them many things in parables, and in His teaching He said,"
+  ],
+  [
+   3,
+   "“Listen! A farmer went out to sow his seed."
+  ],
+  [
+   4,
+   "And as he was sowing, some seed fell along the path, and the birds came and devoured it."
+  ],
+  [
+   5,
+   "Some fell on rocky ground, where it did not have much soil. It sprang up quickly because the soil was shallow."
+  ],
+  [
+   6,
+   "But when the sun rose, the seedlings were scorched, and they withered because they had no root."
+  ],
+  [
+   7,
+   "Other seed fell among thorns, which grew up and choked the seedlings, and they yielded no crop."
+  ],
+  [
+   8,
+   "Still other seed fell on good soil, where it sprouted, grew up, and produced a crop—one bearing thirtyfold, another sixtyfold, and another a hundredfold.”"
+  ],
+  [
+   9,
+   "Then Jesus said, “He who has ears to hear, let him hear.”"
+  ],
+  [
+   10,
+   "As soon as Jesus was alone with the Twelve and those around Him, they asked Him about the parable."
+  ],
+  [
+   11,
+   "He replied, “The mystery of the kingdom of God has been given to you, but to those on the outside everything is expressed in parables,"
+  ],
+  [
+   12,
+   "so that, ‘they may be ever seeing but never perceiving, and ever hearing but never understanding; otherwise they might turn and be forgiven.’”"
+  ],
+  [
+   13,
+   "Then Jesus said to them, “Do you not understand this parable? Then how will you understand any of the parables?"
+  ],
+  [
+   14,
+   "The farmer sows the word."
+  ],
+  [
+   15,
+   "Some are like the seeds along the path, where the word is sown. As soon as they hear it, Satan comes and takes away the word that was sown in them."
+  ],
+  [
+   16,
+   "Some are like the seeds sown on rocky ground. They hear the word and at once receive it with joy."
+  ],
+  [
+   17,
+   "But they themselves have no root, and they remain for only a season. When trouble or persecution comes because of the word, they quickly fall away."
+  ],
+  [
+   18,
+   "Others are like the seeds sown among the thorns. They hear the word,"
+  ],
+  [
+   19,
+   "but the worries of this life, the deceitfulness of wealth, and the desire for other things come in and choke the word, and it becomes unfruitful."
+  ],
+  [
+   20,
+   "Still others are like the seeds sown on good soil. They hear the word, receive it, and produce a crop—thirtyfold, sixtyfold, or a hundredfold.”"
+  ]
+ ],
+ "title": "Ears to Hear",
+ "season_line": "After a chapter of pushback from religious leaders and even His own family, Jesus sits in a boat on the Sea of Galilee and begins teaching in stories.",
+ "big_idea": "God's word is always being sown; what it grows in us depends on whether we give it room to take root.",
+ "frame": "Most mornings God's word reaches us in some way, through a verse over coffee, a song, a friend's comment. The question is not whether it arrives but what happens to it by lunchtime. Walking with God is less about collecting more truth and more about letting what we've heard go deep, then guarding it from the slow crowding of hurry, worry, and wanting. Scripture tells us God's word never returns empty ({{Isaiah 55:10-11|Isaiah 55:10–11}}), and Jesus Himself is the Sower, patient and generous, still scattering seed on hard and tangled ground. Carry an open, attentive heart today: listen once, then listen again, and let one thing actually change you.",
+ "carry": {
+  "ref": "Mark 4:20",
+  "display": "Mark 4:20",
+  "text": "Still others are like the seeds sown on good soil. They hear the word, receive it, and produce a crop—thirtyfold, sixtyfold, or a hundredfold.”"
+ },
+ "glance": [
+  {
+   "verses": "1-2",
+   "head": "Teaching from a Boat",
+   "line": "A huge crowd presses in, so Jesus teaches from a boat just offshore."
+  },
+  {
+   "verses": "3-9",
+   "head": "The Farmer's Seed",
+   "line": "Seed falls on four kinds of ground, and only the good soil produces a crop."
+  },
+  {
+   "verses": "10-13",
+   "head": "Why Parables?",
+   "line": "Privately, Jesus explains that parables open the kingdom to some and stay closed to hardened hearts."
+  },
+  {
+   "verses": "14-20",
+   "head": "Four Kinds of Hearers",
+   "line": "The seed is the word, and the soils are the different ways people receive it."
+  }
+ ],
+ "understand": [
+  "Mark 3 was full of rejection: leaders said Jesus was working for Satan, and His family thought He'd lost His mind. Now Jesus answers in a new way. He tells stories. A parable is a simple picture from daily life that carries a deeper truth, and it sorts its listeners. Those who lean in and ask, like the disciples in verse 10, get more. Those who have already decided against Him hear only a farming tale.",
+  "Farmers in Galilee often scattered seed by hand across a field crossed by footpaths. Some ground hid limestone just under a thin layer of soil, and thorny weeds came back every year. Jesus' hearers knew every one of these soils. What would have surprised them is the ending: thirty, sixty, a hundred times what was sown, a harvest far beyond the ordinary.",
+  "Verse 12 echoes God's call to Isaiah ({{Isaiah 6:9-10|Isaiah 6:9–10}}), where the prophet is told his message will meet hearts too hard to respond. Jesus is saying the same pattern is happening again. Yet the parable itself is full of hope. The farmer doesn't stop sowing because some ground is hard. That's a picture of Jesus, and of the gospel going out through His followers.",
+  "The four soils are not four fixed types of people so much as four things that can happen to the word in any of us. It can be snatched away before it sinks in, received with quick joy that wilts under pressure, or choked by worries, money, and wanting more. Or it can be heard, welcomed, and allowed to grow until it bears fruit, the kind Jesus later describes as remaining in Him ({{John 15:5|John 15:5}})."
+ ],
+ "word": {
+  "term": "mystērion",
+  "english": "mystery",
+  "gloss": "In the New Testament, a mystery isn't a puzzle to solve but a secret God has now chosen to reveal. The kingdom of God is shown to those who come to Jesus and ask."
+ },
+ "glow": [
+  "Listen!",
+  "He who has ears to hear, let him hear.",
+  "hear the word, receive it, and produce a crop",
+  "mystery"
+ ],
+ "steps": {
+  "god": {
+   "short": "At midday, reread Mark 4:20 and ask God what He wants to grow.",
+   "full": "Sometime around lunch, reread Mark 4:20 and pray, \"Lord, what did You say to me this morning that You want to grow in me today?\" Then name one thorn crowding it out.",
+   "why": "God promises His word will accomplish what He sends it to do {{Isaiah 55:10-11|Isaiah 55:10–11}}."
+  },
+  "together": {
+   "short": "Each name one thorn crowding out God's word this week, then pray.",
+   "full": "Take one minute: each of you finish the sentence, \"The thing crowding God out for me this week is ___.\" Then one of you prays a single line asking God to clear it.",
+   "why": ""
+  },
+  "others": {
+   "short": "Send a struggling friend one hopeful verse, and leave the results to God.",
+   "full": "Think of a friend or coworker who seems worn down or far from God, and send them one short encouraging verse or word of hope. Sow it freely, without worrying about how it lands.",
+   "why": "One plants, another waters, but God gives the growth {{1 Corinthians 3:6-7|1 Corinthians 3:6–7}}."
+  }
+ },
+ "tonight": "What is one thing God has said to us lately that we've heard but haven't really let change anything yet?",
+ "more": [
+  {
+   "ref": "Isaiah 55:10-11",
+   "display": "Isaiah 55:10–11",
+   "line": "God's word always does what He sends it to do."
+  },
+  {
+   "ref": "James 1:21-25",
+   "display": "James 1:21–25",
+   "line": "Receiving the word means hearing it and doing it."
+  },
+  {
+   "ref": "John 15:1-8",
+   "display": "John 15:1–8",
+   "line": "Fruitfulness comes from staying close to Jesus."
+  }
+ ],
+ "tomorrow": {
+  "ref": "Mark 4:21",
+  "display": "The Gospel of Mark picks up at Mark 4:21"
+ },
+ "generated_by": "claude-opus-5-5",
+ "built_at": "2026-11-22T12:05:16-05:00"
+}
