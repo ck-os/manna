@@ -1,0 +1,164 @@
+{
+ "date": "2026-11-26",
+ "weekday_line": "Thursday, November 26",
+ "series": "Thanksgiving Day",
+ "series_day": 0,
+ "kind": "special",
+ "track": null,
+ "track_name": "Thanksgiving Day",
+ "segment": -1,
+ "pos": {
+  "b": 41,
+  "c": 17,
+  "v_end": 19
+ },
+ "life_area": "words and speech",
+ "church_season": "Ordinary Time",
+ "natural_season": "autumn",
+ "chips": [
+  {
+   "label": "Thanksgiving",
+   "when": "today",
+   "days": 0
+  },
+  {
+   "label": "Advent begins",
+   "when": "in 3 days",
+   "days": 3
+  },
+  {
+   "label": "Christmas Eve",
+   "when": "in 28 days",
+   "days": 28
+  }
+ ],
+ "ref": "Luke 17:11-19",
+ "ref_display": "Luke 17:11–19",
+ "verses": [
+  [
+   11,
+   "While Jesus was on His way to Jerusalem, He was passing between Samaria and Galilee."
+  ],
+  [
+   12,
+   "As He entered one of the villages, He was met by ten lepers. They stood at a distance"
+  ],
+  [
+   13,
+   "and raised their voices, shouting, “Jesus, Master, have mercy on us!”"
+  ],
+  [
+   14,
+   "When Jesus saw them, He said, “Go, show yourselves to the priests.” And as they were on their way, they were cleansed."
+  ],
+  [
+   15,
+   "When one of them saw that he was healed, he came back, praising God in a loud voice."
+  ],
+  [
+   16,
+   "He fell facedown at Jesus’ feet in thanksgiving to Him—and he was a Samaritan."
+  ],
+  [
+   17,
+   "“Were not all ten cleansed?” Jesus asked. “Where then are the other nine?"
+  ],
+  [
+   18,
+   "Was no one found except this foreigner to return and give glory to God?”"
+  ],
+  [
+   19,
+   "Then Jesus said to him, “Rise and go; your faith has made you well!”"
+  ]
+ ],
+ "title": "The One Who Returned",
+ "season_line": "We pause our walk through Mark for Thanksgiving Day and join Jesus on the road to Jerusalem, where ten desperate men call to Him from a distance.",
+ "big_idea": "Gratitude isn't finished until it's spoken; turning back to thank God brings us closer to Jesus than the gift itself.",
+ "frame": "Today many tables will pause for a quick thank-you before the food gets cold, and that's good. But this story shows a deeper kind of thanks: thanks that turns around, gets specific, and says it out loud to the One who gave the gift. All through Scripture, God's people are called to remember and tell what He has done ({{Psalm 107:1-2|Psalm 107:1–2}}), and here that praise lands at the feet of Jesus Himself. So let your words today do some turning back. Name real mercies, out loud, to God and to the people at your table, and let a grateful voice be the tone of your home.",
+ "carry": {
+  "ref": "Luke 17:15-16",
+  "display": "Luke 17:15–16",
+  "text": "When one of them saw that he was healed, he came back, praising God in a loud voice. He fell facedown at Jesus’ feet in thanksgiving to Him—and he was a Samaritan."
+ },
+ "glance": [
+  {
+   "verses": "11-13",
+   "head": "A Cry from Afar",
+   "line": "On the road to Jerusalem, ten lepers keep their distance and shout to Jesus for mercy."
+  },
+  {
+   "verses": "14",
+   "head": "Healed on the Way",
+   "line": "Jesus sends them to the priests, and as they obey, they are cleansed."
+  },
+  {
+   "verses": "15-16",
+   "head": "One Turns Back",
+   "line": "One man, a Samaritan, comes back praising God loudly and falls at Jesus' feet in thanks."
+  },
+  {
+   "verses": "17-19",
+   "head": "Where Are the Nine?",
+   "line": "Jesus asks about the missing nine and tells the grateful foreigner his faith has made him well."
+  }
+ ],
+ "understand": [
+  "Since {{Luke 9:51|Luke 9:51}}, Luke has shown Jesus steadily heading toward Jerusalem and the cross. Along the way He meets people at the edges. Lepers were required by the law to live apart and keep their distance from others ({{Leviticus 13:45-46|Leviticus 13:45–46}}), which is why these ten stand far off and shout. A healed leper had to be examined by a priest before he could return to normal life ({{Leviticus 14:1-4|Leviticus 14:1–4}}), so Jesus' command was really a promise: go as if you're already clean.",
+  "All ten trusted Him enough to start walking, and all ten were healed on the way. The nine weren't wicked; they were doing exactly what they were told. But one stopped, turned around, and came back. Luke saves the surprise for last: he was a Samaritan. Jews and Samaritans had deep, bitter divisions ({{John 4:9|John 4:9}}), yet the outsider is the one who sees most clearly.",
+  "Notice where the man gives glory to God: at Jesus' feet. Luke is quietly showing us who Jesus is. Thanking Jesus is thanking God. This echoes another foreign leper, Naaman, who was healed and then came back to confess the God of Israel ({{2 Kings 5:14-15|2 Kings 5:14–15}}), a story Jesus Himself had pointed to ({{Luke 4:27|Luke 4:27}}).",
+  "Then Jesus speaks a word only this man hears. All ten got clean skin. This one is told his faith has made him well, a word that also means saved. The gift healed the body; returning to the Giver brought him into a whole new relationship with Jesus."
+ ],
+ "word": {
+  "term": "sōzō",
+  "english": "made you well",
+  "gloss": "The common New Testament word for 'save' or 'rescue,' and also 'heal' or 'make whole.' Jesus uses it here to say this man received more than a cure; he was made whole by his faith in Jesus."
+ },
+ "glow": [
+  "praising God in a loud voice",
+  "Where then are the other nine?",
+  "your faith has made you well!",
+  "made you well"
+ ],
+ "steps": {
+  "god": {
+   "short": "Before the meal, name three specific mercies from this year aloud to Jesus.",
+   "full": "Find a quiet minute before the day gets busy and thank Jesus out loud for three specific things He did for you this year, not general blessings but real moments. Say them in your own words, as the Samaritan did.",
+   "why": "The healed man came back and gave thanks at Jesus' feet, {{Luke 17:15-16|Luke 17:15–16}}."
+  },
+  "together": {
+   "short": "Tell each other one specific thing you're grateful for in the other.",
+   "full": "Before guests arrive or the cooking starts, look at each other and finish this sentence: 'This year I'm thankful that you...' Be specific.",
+   "why": ""
+  },
+  "others": {
+   "short": "Text or tell one person who helped you this year exactly how.",
+   "full": "Think of a parent, friend, coworker, or neighbor whose kindness you received but never really thanked. Send a short message today naming what they did and what it meant.",
+   "why": "Grateful words build others up, {{Colossians 3:16-17|Colossians 3:16–17}}."
+  }
+ },
+ "tonight": "What's one good thing God did for us this year that we enjoyed but never really came back to thank Him for?",
+ "more": [
+  {
+   "ref": "2 Kings 5:1-15",
+   "display": "2 Kings 5:1–15",
+   "line": "Another foreign leper healed, who returns to praise God."
+  },
+  {
+   "ref": "Psalm 103:1-5",
+   "display": "Psalm 103:1–5",
+   "line": "A song to keep from forgetting God's benefits."
+  },
+  {
+   "ref": "Colossians 3:15-17",
+   "display": "Colossians 3:15–17",
+   "line": "Let thankfulness shape every word you speak."
+  }
+ ],
+ "tomorrow": {
+  "ref": "Mark 5:21",
+  "display": "The Gospel of Mark picks up at Mark 5:21"
+ },
+ "generated_by": "claude-opus-5-5",
+ "built_at": "2026-11-25T14:10:38-05:00"
+}
