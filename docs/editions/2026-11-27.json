@@ -1,0 +1,220 @@
+{
+ "date": "2026-11-27",
+ "weekday_line": "Friday, November 27",
+ "series": "The Gospel of Mark",
+ "series_day": 11,
+ "kind": "track",
+ "track": "story",
+ "track_name": "The Story",
+ "segment": 0,
+ "pos": {
+  "b": 40,
+  "c": 5,
+  "v_end": 43
+ },
+ "life_area": "worry and trust",
+ "church_season": "Ordinary Time",
+ "natural_season": "autumn",
+ "chips": [
+  {
+   "label": "Advent begins",
+   "when": "in 2 days",
+   "days": 2
+  },
+  {
+   "label": "Christmas Eve",
+   "when": "in 27 days",
+   "days": 27
+  },
+  {
+   "label": "Christmas",
+   "when": "in 28 days",
+   "days": 28
+  }
+ ],
+ "ref": "Mark 5:21-43",
+ "ref_display": "Mark 5:21–43",
+ "verses": [
+  [
+   21,
+   "When Jesus had again crossed by boat to the other side, a large crowd gathered around Him beside the sea."
+  ],
+  [
+   22,
+   "A synagogue leader named Jairus arrived, and seeing Jesus, he fell at His feet"
+  ],
+  [
+   23,
+   "and pleaded with Him urgently, “My little daughter is near death. Please come and place Your hands on her, so that she will be healed and live.”"
+  ],
+  [
+   24,
+   "So Jesus went with him, and a large crowd followed and pressed around Him."
+  ],
+  [
+   25,
+   "And a woman was there who had suffered from bleeding for twelve years."
+  ],
+  [
+   26,
+   "She had borne much agony under the care of many physicians and had spent all she had, but to no avail. Instead, her condition had only grown worse."
+  ],
+  [
+   27,
+   "When the woman heard about Jesus, she came up through the crowd behind Him and touched His cloak."
+  ],
+  [
+   28,
+   "For she kept saying, “If only I touch His garments, I will be healed.”"
+  ],
+  [
+   29,
+   "Immediately her bleeding stopped, and she sensed in her body that she was healed of her affliction."
+  ],
+  [
+   30,
+   "At once Jesus was aware that power had gone out from Him. Turning to the crowd, He asked, “Who touched My garments?”"
+  ],
+  [
+   31,
+   "His disciples answered, “You can see the crowd pressing in on You, and yet You ask, ‘Who touched Me?’”"
+  ],
+  [
+   32,
+   "But He kept looking around to see who had done this."
+  ],
+  [
+   33,
+   "Then the woman, knowing what had happened to her, came and fell down before Him trembling in fear, and she told Him the whole truth."
+  ],
+  [
+   34,
+   "“Daughter,” said Jesus, “your faith has healed you. Go in peace and be free of your affliction.”"
+  ],
+  [
+   35,
+   "While He was still speaking, messengers from the house of Jairus arrived and said, “Your daughter is dead; why bother the Teacher anymore?”"
+  ],
+  [
+   36,
+   "But Jesus overheard their conversation and said to Jairus, “Do not be afraid; just believe.”"
+  ],
+  [
+   37,
+   "And He did not allow anyone to accompany Him except Peter, James, and John the brother of James."
+  ],
+  [
+   38,
+   "When they arrived at the house of the synagogue leader, Jesus saw the commotion and the people weeping and wailing loudly."
+  ],
+  [
+   39,
+   "He went inside and asked, “Why all this commotion and weeping? The child is not dead, but asleep.”"
+  ],
+  [
+   40,
+   "And they laughed at Him. After He had put them all outside, He took the child’s father and mother and His own companions, and went in to see the child."
+  ],
+  [
+   41,
+   "Taking her by the hand, Jesus said, “Talitha koum!” which means, “Little girl, I say to you, get up!”"
+  ],
+  [
+   42,
+   "Immediately the girl got up and began to walk around (she was twelve years old). And at once they were utterly astounded."
+  ],
+  [
+   43,
+   "Then Jesus gave strict orders that no one should know about this, and He told them to give her something to eat."
+  ]
+ ],
+ "title": "Just Believe",
+ "season_line": "Jesus has crossed back over the lake from the healed man in the Gerasenes, and a desperate father is waiting on the shore.",
+ "big_idea": "Jesus is never too busy and never too late, so fear doesn't get the last word. Trust does.",
+ "frame": "Most worry comes from one of two fears: that God hasn't noticed us, or that He'll get there too late. Today's story answers both at once. Jesus stops for the woman no one saw, and He keeps walking toward the house everyone said was hopeless. The whole Bible bends toward this truth, and it finally breaks open at an empty tomb. The God who raises the dead isn't hurried by our deadlines or scared off by our worst news. So carry your anxious thing into today without pretending it's small. Let His quiet word set your pace: don't be afraid, just believe.",
+ "carry": {
+  "ref": "Mark 5:36",
+  "display": "Mark 5:36",
+  "text": "But Jesus overheard their conversation and said to Jairus, “Do not be afraid; just believe.”"
+ },
+ "glance": [
+  {
+   "verses": "21-24",
+   "head": "A Father's Plea",
+   "line": "Jairus, a respected synagogue leader, falls at Jesus' feet and begs Him to come heal his dying daughter."
+  },
+  {
+   "verses": "25-34",
+   "head": "A Hidden Touch",
+   "line": "On the way, a woman sick for twelve years touches His cloak and is healed, and Jesus stops to find her and call her daughter."
+  },
+  {
+   "verses": "35-36",
+   "head": "The Worst News",
+   "line": "Word comes that the girl has died, and Jesus tells Jairus not to fear but to believe."
+  },
+  {
+   "verses": "37-43",
+   "head": "Little Girl, Get Up",
+   "line": "Jesus takes the girl by the hand, raises her to life, and tells her parents to give her something to eat."
+  }
+ ],
+ "understand": [
+  "Mark loves to tell one story inside another, and this is his best-known sandwich. Jairus's daughter is twelve. The woman has been sick for twelve years. One is an honored leader who comes openly to Jesus' feet. The other is a nobody who slips up from behind. Mark wants us to read them together: Jesus has time and power for both.",
+  "Under the law, a woman with ongoing bleeding was ceremonially unclean, and anyone she touched became unclean too ({{Leviticus 15:25-27|Leviticus 15:25–27}}). For twelve years she had likely lived on the edges of worship, family, and friendship, and she had spent everything she had. So she touches Jesus secretly. But here uncleanness doesn't flow into Him. Healing flows out. Jesus stops not to scold her but to restore her in public, and He calls her 'Daughter,' the only time in the Gospels He calls anyone that.",
+  "That delay is agony for Jairus, and then the news comes: too late. Jesus answers with five words. Then He does what Elijah and Elisha did only after long prayer ({{1 Kings 17:17-24|1 Kings 17:17–24}}, {{2 Kings 4:32-37|2 Kings 4:32–37}}): He raises a dead child. But He does it with a simple word in Aramaic, the everyday language of home: 'Talitha koum.' Calling death 'sleep' wasn't denial. In His presence, death is something you wake up from ({{John 11:11-14|John 11:11–14}}).",
+  "Mark has been building a picture over the last few days. Jesus rules the storm, the demons, disease, and now death itself. Each scene asks the same question He asked in the boat: Why are you afraid? And each one points toward Easter, when Jesus Himself will get up and death will lose its grip for everyone who belongs to Him ({{1 Thessalonians 4:13-14|1 Thessalonians 4:13–14}})."
+ ],
+ "word": {
+  "term": "sōzō",
+  "english": "healed",
+  "gloss": "The Greek word Jairus and the woman use means to save, rescue, or make whole. It covers bodies, but in the Gospels it reaches further, to the whole person brought safely to God. When Jesus says 'your faith has healed you,' He means more than a stopped illness."
+ },
+ "glow": [
+  "Do not be afraid; just believe",
+  "Go in peace and be free of your affliction",
+  "Little girl, I say to you, get up!",
+  "healed"
+ ],
+ "steps": {
+  "god": {
+   "short": "Name today's worry, and answer it each time with Mark 5:36.",
+   "full": "Name the one worry most likely to grip you today. Every time it rises, pray Jesus' words back to Him: 'Do not be afraid; just believe,' and add, 'Lord, I'm trusting You with this.'",
+   "why": "Jesus spoke this to a father who had just heard the worst news ({{Mark 5:36|Mark 5:36}})."
+  },
+  "together": {
+   "short": "Tell each other one worry; the other prays one line over it.",
+   "full": "Before you leave, each of you names one thing you're anxious about. The other puts a hand on your shoulder and prays one sentence: 'Jesus, take this one by the hand.'",
+   "why": ""
+  },
+  "others": {
+   "short": "Reach out to someone in a long, hard season nobody mentions anymore.",
+   "full": "Think of a friend or relative with a long illness or a drawn-out struggle that people have stopped asking about. Text or call today and ask how they're really doing, then listen.",
+   "why": "Jesus stopped the whole crowd for a woman who had suffered twelve years ({{Mark 5:30-34|Mark 5:30–34}})."
+  }
+ },
+ "tonight": "Where does it feel like Jesus is helping someone else while our need waits, and what would trusting Him look like there this week?",
+ "more": [
+  {
+   "ref": "Isaiah 40:27-31",
+   "display": "Isaiah 40:27–31",
+   "line": "For anyone who feels God has overlooked them."
+  },
+  {
+   "ref": "John 11:17-27",
+   "display": "John 11:17–27",
+   "line": "Another 'too late' answered by Jesus."
+  },
+  {
+   "ref": "1 Kings 17:17-24",
+   "display": "1 Kings 17:17–24",
+   "line": "Elijah raises a widow's son, an Old Testament echo."
+  }
+ ],
+ "tomorrow": {
+  "ref": "Psalm 5:1",
+  "display": "The Psalms picks up at Psalm 5"
+ },
+ "generated_by": "claude-opus-5-5",
+ "built_at": "2026-11-26T13:58:21-05:00"
+}
