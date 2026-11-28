@@ -1,0 +1,147 @@
+{
+ "date": "2026-11-29",
+ "weekday_line": "Sunday, November 29",
+ "series": "Advent · The Light Is Coming",
+ "series_day": 0,
+ "kind": "special",
+ "track": null,
+ "track_name": "Advent · The Light Is Coming",
+ "segment": -1,
+ "pos": {
+  "b": 22,
+  "c": 9,
+  "v_end": 7
+ },
+ "life_area": "hard seasons and suffering",
+ "church_season": "Advent",
+ "natural_season": "autumn",
+ "chips": [
+  {
+   "label": "Advent begins",
+   "when": "today",
+   "days": 0
+  },
+  {
+   "label": "Christmas Eve",
+   "when": "in 25 days",
+   "days": 25
+  },
+  {
+   "label": "Christmas",
+   "when": "in 26 days",
+   "days": 26
+  }
+ ],
+ "ref": "Isaiah 9:2-7",
+ "ref_display": "Isaiah 9:2–7",
+ "verses": [
+  [
+   2,
+   "The people walking in darkness have seen a great light; on those living in the land of the shadow of death, a light has dawned."
+  ],
+  [
+   3,
+   "You have enlarged the nation and increased its joy. The people rejoice before You as they rejoice at harvest time, as men rejoice in dividing the plunder."
+  ],
+  [
+   4,
+   "For as in the day of Midian You have shattered the yoke of their burden, the bar across their shoulders, and the rod of their oppressor."
+  ],
+  [
+   5,
+   "For every trampling boot of battle and every garment rolled in blood will be burned as fuel for the fire."
+  ],
+  [
+   6,
+   "For unto us a child is born, unto us a son is given, and the government will be upon His shoulders. And He will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace."
+  ],
+  [
+   7,
+   "Of the increase of His government and peace there will be no end. He will reign on the throne of David and over his kingdom, to establish and sustain it with justice and righteousness from that time and forevermore. The zeal of the LORD of Hosts will accomplish this."
+  ]
+ ],
+ "title": "A Light Has Dawned",
+ "season_line": "It's the first Sunday of Advent, so we step out of Mark for a day and listen to Isaiah, writing about 700 years before Bethlehem to people in deep darkness.",
+ "big_idea": "God doesn't wait for your darkness to lift before sending light. His Son comes right into it.",
+ "frame": "Advent begins in the dark, not after it. Isaiah's first listeners had no reason for hope. Their land was being overrun. Yet God spoke of light as if it had already dawned. If you are in a hard season right now, this is good news. Jesus didn't come to people who had cleaned up their lives. He came to the land of shadow, and He still does. Carry this posture today: be honest about the dark, and look for the Light anyway.",
+ "carry": {
+  "ref": "Isaiah 9:2",
+  "display": "Isaiah 9:2",
+  "text": "The people walking in darkness have seen a great light; on those living in the land of the shadow of death, a light has dawned."
+ },
+ "glance": [
+  {
+   "verses": "2",
+   "head": "Light in the Dark",
+   "line": "People stuck in deep darkness see a great light break over them."
+  },
+  {
+   "verses": "3-5",
+   "head": "Joy and Freedom",
+   "line": "God multiplies joy, breaks the oppressor's yoke, and burns the gear of war."
+  },
+  {
+   "verses": "6-7",
+   "head": "The Child Who Reigns",
+   "line": "A child is born who will rule forever with justice and peace, and God's own zeal guarantees it."
+  }
+ ],
+ "understand": [
+  "Isaiah spoke during the reign of King Ahaz, when the mighty Assyrian empire was crushing Israel's northern lands. The regions of Zebulun and Naphtali, around Galilee, were hit first and hardest ({{2 Kings 15:29|2 Kings 15:29}}). The verse just before ours names them ({{Isaiah 9:1|Isaiah 9:1}}). These were the people walking in darkness.",
+  "Into that gloom God promised a dawn. He pointed back to the day of Midian, when Gideon's tiny band won only because God fought for them ({{Judges 7:19-22|Judges 7:19–22}}). Freedom would come the same way, by God's hand and not human strength. Even the boots and bloody cloaks of war would be thrown on the fire.",
+  "Then comes the surprise. The rescue arrives as a baby. This child carries the government on His shoulders, where the oppressor's yoke used to sit. His names say He is wiser than any counselor and fully God. He cares for His people like a father forever, and He brings lasting peace. He will sit on David's throne, fulfilling God's promise to David ({{2 Samuel 7:12-16|2 Samuel 7:12–16}}).",
+  "Centuries later, Jesus began His ministry in that same Galilee, and Matthew says this is the very light Isaiah saw ({{Matthew 4:12-17|Matthew 4:12–17}}). The angel told Mary her Son would reign on David's throne without end ({{Luke 1:32-33|Luke 1:32–33}}). The final line is the anchor. The zeal of the LORD will make it happen, not our effort."
+ ],
+ "word": {
+  "term": "shalom",
+  "english": "peace",
+  "gloss": "Shalom means much more than no fighting. It means wholeness, everything made right and well. The Prince of Peace brings that kind of peace, and His kingdom of it never stops growing."
+ },
+ "glow": [
+  "a light has dawned",
+  "unto us a son is given",
+  "The zeal of the LORD of Hosts will accomplish this",
+  "peace"
+ ],
+ "steps": {
+  "god": {
+   "short": "Light a candle and pray verse 2 over one dark place in your life.",
+   "full": "Light a candle or lamp this morning. Name one dark place you're walking through, and pray verse 2 over it, asking Jesus to be the light there.",
+   "why": "Jesus called Himself the light of the world, promising His followers would not walk in darkness ({{John 8:12|John 8:12}})."
+  },
+  "together": {
+   "short": "Each say which of His four names you need most this week.",
+   "full": "Read verse 6 aloud. Each of you say which name you need most right now: Wonderful Counselor, Mighty God, Everlasting Father, or Prince of Peace.",
+   "why": ""
+  },
+  "others": {
+   "short": "Reach out to someone facing their first holidays after a loss.",
+   "full": "Think of someone heading into the holidays hurting, maybe after a death, a divorce, or a diagnosis. Send a short note today saying you're thinking of them and praying.",
+   "why": "Isaiah's light came to people living in the land of the shadow of death, and we can carry it there too ({{Matthew 5:14-16|Matthew 5:14–16}})."
+  }
+ },
+ "tonight": "Where does life feel darkest for us right now, and how would it change things to believe the light has already dawned there?",
+ "more": [
+  {
+   "ref": "Matthew 4:12-17",
+   "display": "Matthew 4:12–17",
+   "line": "Jesus begins His ministry where Isaiah promised light."
+  },
+  {
+   "ref": "Luke 1:26-33",
+   "display": "Luke 1:26–33",
+   "line": "The angel announces the Son on David's throne."
+  },
+  {
+   "ref": "John 1:1-9",
+   "display": "John 1:1–9",
+   "line": "The true Light comes into the world."
+  }
+ ],
+ "tomorrow": {
+  "ref": "Mark 6:1",
+  "display": "The Gospel of Mark picks up at Mark 6"
+ },
+ "generated_by": "claude-opus-5-5",
+ "built_at": "2026-11-28T12:29:38-05:00"
+}
